@@ -3,16 +3,24 @@ import './Header.css';
 import companyLogo from "../../assets/header-assets/company-logo.svg";
 
 const Header: React.FC = () => {
+
+    const textInfo: string = "- Pearl Polyurethane, Covestro sign climate-neutral MDI supply deal AkzoNobel to expand water-based texture paints capacity in China - HRS showcases restart of the chemical industry in India";
+
     return (
         <>
             <header className="header">
-                <div className="logo-container">
-                    <img src = { companyLogo } alt="Chemical Today"/>
+                <div className='logo-container'>
+                    <img className="logo" src = { companyLogo } alt="Chemical Today"/>
                 </div>
-                <nav className="navigation">
-                    <ul>
-                        <li><a href="/posts">Posts</a></li>
-                        <li><a href="/sectors">Sectors</a></li>
+                <div className='header-info'>
+                    <p className='text-info'>
+                        { textInfo }
+                    </p>
+                </div>
+                <nav>
+                    <ul className="navigation">
+                        <li className='item'><a href="/posts">Posts</a></li>
+                        <li className='item'><a href="/sectors">Sectors</a></li>
                         <li><a href="/insights">Insights</a></li>
                         <li><a href="/spotlight">Spotlight</a></li>
                         <li><a href="/product">Product</a></li>
