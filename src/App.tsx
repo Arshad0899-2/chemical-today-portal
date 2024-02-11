@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
+import PostInsider from './pages/Post Insider/PostInsider'
+import PostPage from './pages/Post/PostPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header></Header>
+      {/* <PostPage></PostPage> */}
+      <PostInsider></PostInsider>
+      <Footer></Footer>
     </>
   )
 }
