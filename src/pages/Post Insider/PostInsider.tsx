@@ -1,7 +1,7 @@
 import './PostInsider.css';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import blackImg from "../../assets/home-page-assets/Post-assets/blank_img.svg"
-import { PosconsttInsider } from "../../utils/constants";
+import { PostInsiderConstants } from "../../utils/constants";
 
 const PostInsider: React.FC = () => {
 
@@ -12,14 +12,14 @@ const PostInsider: React.FC = () => {
                 <div className='post-insider-body'>
                     <div className='post-details'>
                         <div className="post-type">
-                            <p className='post-type-text'>{ PosconsttInsider.postType }</p>
+                            <p className='post-type-text'>{ PostInsiderConstants.postType }</p>
                         </div>
-                        <h1 className='title'>{ PosconsttInsider.title }</h1>
+                        <h1 className='title'>{ PostInsiderConstants.title }</h1>
                         <div className='post-info'>
-                            <p>{ PosconsttInsider.publishedComapny }</p>
-                            <p>{ PosconsttInsider.publishedDate }</p>
+                            <p>{ PostInsiderConstants.publishedComapny }</p>
+                            <p>{ PostInsiderConstants.publishedDate }</p>
                             <div className='share'>
-                                <p>{ PosconsttInsider.share }</p>
+                                <p>{ PostInsiderConstants.share }</p>
                                 <div className='share-btn'></div>
                                 <div className='share-btn'></div>
                                 <div className='share-btn'></div>
@@ -28,8 +28,8 @@ const PostInsider: React.FC = () => {
                         <div className='img-info'>
                             <img  className='post-img' src={ blackImg } />
                             <div>
-                                <p className='img-title'>{ PosconsttInsider.imgTitle }</p>
-                                <p className='post-desc'>{ PosconsttInsider.postDesc }</p>
+                                <p className='img-title'>{ PostInsiderConstants.imgTitle }</p>
+                                <p className='post-desc'>{ PostInsiderConstants.postDesc }</p>
                             </div> 
                         </div>
                     </div>

@@ -19,7 +19,7 @@ export const CoverPageHeader:any = {
 }
 
 
-export const PosconsttInsider:any = {
+export const PostInsiderConstants:any = {
      postType :"Industries",
      title : "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain.",
      publishedComapny : "By Chemical Today",
