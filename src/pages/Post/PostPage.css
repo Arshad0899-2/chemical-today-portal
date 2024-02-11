@@ -1,0 +1,40 @@
+.post-main-body {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.horizantal-ads {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.post-heading {
+    text-align: center;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar-ad {
+    width: 300px;
+}
+
+.post-ads-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,14 +1,16 @@
 import './App.css'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
-import CoverPage from './pages/CoverPage/CoverPage'
+import PostInsider from './pages/Post Insider/PostInsider'
+import PostPage from './pages/Post/PostPage'
 
 function App() {
 
   return (
     <>
       <Header></Header>
-      <CoverPage></CoverPage>
+      {/* <PostPage></PostPage> */}
+      <PostInsider></PostInsider>
       <Footer></Footer>
     </>
   )
