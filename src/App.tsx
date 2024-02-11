@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      {/* <PostPage></PostPage> */}
+      <PostPage></PostPage>
       <PostInsider></PostInsider>
       <Footer></Footer>
     </>

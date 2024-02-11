@@ -4,6 +4,7 @@ import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import Post from '../../components/ui/Post/Post';
 import sideBarAds from '../../assets/home-page-assets/Post-assets/balnk_ads.svg'
 import posts from '../../utils/posts';
+import { PostPageConstants } from "../../utils/constants";
 
 const PostPage: React.FC = () => {
 
@@ -11,10 +12,9 @@ const PostPage: React.FC = () => {
 
     return (
         <>
-            <div className='post-main-body'>
                 <img className='horizantal-ads' src={TempAds} alt="Advertize" />
                 <div>
-                    <h2 className='post-heading'>Featured Post</h2>
+                    <h2 className='post-heading'>{ PostPageConstants.title }</h2>
                 </div>
 
                 <div className='post-body'>
@@ -44,8 +44,6 @@ const PostPage: React.FC = () => {
 
                     </div>
                 </div>
-
-            </div>
         </>
     );
 };

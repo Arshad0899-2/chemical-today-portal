@@ -8,9 +8,6 @@ const CoverPage: React.FC = () => {
         <>
             <div className='main-body'>
                 <img className='horizantal-ads' src={TempAds} alt="Advertize" />
-                <div>
-                    <h2 className='post-heading'>Featured Post</h2>
-                </div>
             </div>
         </>
     );
