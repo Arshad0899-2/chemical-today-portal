@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                         <div className='read-more'>
                             <p className='readMoreTest'> { CoverPageHeader.readMoreText } </p>
                             <div className='read-more-button'>
-                                <p> { CoverPageHeader.readMore }</p>
+                                <p> { CoverPageHeader.readHere }</p>
                                 <p className='arrow'>&rarr;</p>
                             </div>
                         </div>
@@ -45,7 +45,8 @@ const Header: React.FC = () => {
                 <div className='navigation'>
                     {CoverPageHeader.navElements.map((text:string) => (
                         <a className='item'>{ text }</a>
-
+                        // Use the below to route
+                        // <Link className='item' to={'#'}>{ text } <Link/>
                     ))}
                 </div>
             </header >

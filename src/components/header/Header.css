@@ -129,8 +129,8 @@
 }
 
 .arrow {
-    padding-left: 4px;
-    font-size: 25px;
+    padding-left: 8px;
+    font-size: 18px;
     display: flex; 
     justify-content: center;
     align-items: center;
