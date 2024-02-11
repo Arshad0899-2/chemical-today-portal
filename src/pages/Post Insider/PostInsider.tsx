@@ -1,16 +1,9 @@
 import './PostInsider.css';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import blackImg from "../../assets/home-page-assets/Post-assets/blank_img.svg"
+import { PosconsttInsider } from "../../utils/constants";
 
 const PostInsider: React.FC = () => {
-
-    const postType: string = "Industries";
-    const title:string = "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain."
-    const publishedComapny = "By Chemical Today";
-    const publishedDate = "19 December 2023";
-    const share = "Share";
-    const imgTitle = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
-    const postDesc = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry."
 
     return (
         <>
@@ -19,24 +12,24 @@ const PostInsider: React.FC = () => {
                 <div className='post-insider-body'>
                     <div className='post-details'>
                         <div className="post-type">
-                            <p className='post-type-text'>{postType}</p>
+                            <p className='post-type-text'>{ PosconsttInsider.postType }</p>
                         </div>
-                        <h1 className='title'>{ title }</h1>
+                        <h1 className='title'>{ PosconsttInsider.title }</h1>
                         <div className='post-info'>
-                            <p>{publishedComapny}</p>
-                            <p>{publishedDate}</p>
+                            <p>{ PosconsttInsider.publishedComapny }</p>
+                            <p>{ PosconsttInsider.publishedDate }</p>
                             <div className='share'>
-                                <p>{share}</p>
+                                <p>{ PosconsttInsider.share }</p>
                                 <div className='share-btn'></div>
                                 <div className='share-btn'></div>
                                 <div className='share-btn'></div>
                             </div>
                         </div>
                         <div className='img-info'>
-                            <img  className='post-img' src={blackImg} />
+                            <img  className='post-img' src={ blackImg } />
                             <div>
-                                <p className='img-title'>{ imgTitle }</p>
-                                <p className='post-desc'>{ postDesc }</p>
+                                <p className='img-title'>{ PosconsttInsider.imgTitle }</p>
+                                <p className='post-desc'>{ PosconsttInsider.postDesc }</p>
                             </div> 
                         </div>
                     </div>
