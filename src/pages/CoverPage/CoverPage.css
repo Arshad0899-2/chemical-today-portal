@@ -1,0 +1,10 @@
+.horizantal-ads {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+}
+
+.main-body {
+    height: 900px;
+}
