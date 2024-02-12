@@ -1,4 +1,4 @@
-export const CoverPageHeader:any = {
+export const CoverPageHeaderConstants:any = {
     textInfo : "- Pearl Polyurethane, Covestro sign climate-neutral MDI supply deal AkzoNobel to expand water-based texture paints capacity in China - HRS showcases restart of the chemical industry in India",
     navElements : [
         'Posts', 

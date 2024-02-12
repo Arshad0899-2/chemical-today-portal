@@ -73,41 +73,41 @@ const posts: PostInfo[] = [
         heading: "Image Thirteen",
         description: "This image is focused on nature, with a description discussing the natural elements, the time of year, and what makes this view unique."
     },
-    {
-        url: blankImg,
-        heading: "Image Fourteen",
-        description: "Image Fourteen captures a moment in sports, with a description detailing the event, the action in the frame, and the emotions tied to the sport."
-    },
-    {
-        url: blankImg,
-        heading: "Image Fifteen",
-        description: "This image depicts a serene beach scene. The description paints a picture of the location, the time of day, and the mood of the seascape."
-    },
-    {
-        url: blankImg,    
-        heading: "Image Sixteen",
-        description: "Image Sixteen is an artistic still life, with a description that discusses the composition, the objects chosen, and the overall theme of the piece."
-    },
-    {
-        url: blankImg,     
-        heading: "Image Seventeen",
-        description: "This image captures a historical monument. The description provides historical context, architectural details, and the significance of the monument."
-    },
-    {
-        url: blankImg,     
-        heading: "Image Eighteen",
-        description: "Image Eighteen shows a bustling cityscape. The description explores the urban dynamics, the time of capture, and the energy of the city."
-    },
-    {
-        url: blankImg,     
-        heading: "Image Nineteen",
-        description: "This image presents a unique artistic interpretation. The description delves into the artist's vision, the style used, and the message conveyed."
-    },
-    {
-        url: blankImg,     
-        heading: "Image Twenty",
-        description: "Image Twenty concludes the series with its depiction of a tranquil setting, discussing the peacefulness, the natural elements, and the feeling it evokes."
-    }
+    // {
+    //     url: blankImg,
+    //     heading: "Image Fourteen",
+    //     description: "Image Fourteen captures a moment in sports, with a description detailing the event, the action in the frame, and the emotions tied to the sport."
+    // },
+    // {
+    //     url: blankImg,
+    //     heading: "Image Fifteen",
+    //     description: "This image depicts a serene beach scene. The description paints a picture of the location, the time of day, and the mood of the seascape."
+    // },
+    // {
+    //     url: blankImg,    
+    //     heading: "Image Sixteen",
+    //     description: "Image Sixteen is an artistic still life, with a description that discusses the composition, the objects chosen, and the overall theme of the piece."
+    // },
+    // {
+    //     url: blankImg,     
+    //     heading: "Image Seventeen",
+    //     description: "This image captures a historical monument. The description provides historical context, architectural details, and the significance of the monument."
+    // },
+    // {
+    //     url: blankImg,     
+    //     heading: "Image Eighteen",
+    //     description: "Image Eighteen shows a bustling cityscape. The description explores the urban dynamics, the time of capture, and the energy of the city."
+    // },
+    // {
+    //     url: blankImg,     
+    //     heading: "Image Nineteen",
+    //     description: "This image presents a unique artistic interpretation. The description delves into the artist's vision, the style used, and the message conveyed."
+    // },
+    // {
+    //     url: blankImg,     
+    //     heading: "Image Twenty",
+    //     description: "Image Twenty concludes the series with its depiction of a tranquil setting, discussing the peacefulness, the natural elements, and the feeling it evokes."
+    // }
 ];
 
 export default posts;
