@@ -5,7 +5,7 @@ interface PostInfo {
 }
 
 // import blankImg from "../assets/home-page-assets/Post-assets/blank_img.svg";
-import blankImg from "../assets/home-page-assets/Post-assets/sample_img.png";
+import blankImg from "../assets/home-page-assets/Post-assets/sample_chemical.png";
 
 const posts: PostInfo[] = [
     {
