@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 } */
+
+.horizantal-ads {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+

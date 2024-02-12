@@ -1,11 +1,3 @@
-.horizantal-ads {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
 .App {
     display: flex;
     flex-wrap: wrap;

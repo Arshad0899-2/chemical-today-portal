@@ -3,14 +3,6 @@
     width: 90%;
 }
 
-.horizantal-ads {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
 .post-heading {
     text-align: center;
 }
