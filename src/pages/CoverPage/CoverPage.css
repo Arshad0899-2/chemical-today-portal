@@ -6,3 +6,8 @@
 .post-heading {
     text-align: center;
 }
+
+.cover-post-items {
+    display: flex;
+    flex-wrap: wrap;
+}

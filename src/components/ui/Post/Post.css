@@ -7,6 +7,26 @@
     text-align: center;
 }
 
+.postStyle {
+    box-sizing: border-box;
+}
+
+.postStyle:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.postStyle:not(:nth-child(3n)) {
+    margin-right: 15px;
+}
+
+/* For smaller screens (two-column layout) */
+@media (max-width: 1432px) { /* Adjust the breakpoint as needed */
+
+    .postStyle:nth-child(3n) {
+        margin-right: 15px; /* Reset the margin for smaller screens */
+    }
+}
+
 .background-image {
     width: 100%;
     /* This will make the image responsive to the container's width */

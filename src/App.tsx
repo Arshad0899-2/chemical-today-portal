@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <PostPage></PostPage>
       <PostInsider></PostInsider>
       <CoverPage></CoverPage>
+      <PostPage></PostPage>
       <Footer></Footer>
     </>
   )

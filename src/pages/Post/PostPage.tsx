@@ -20,19 +20,13 @@ const PostPage: React.FC = () => {
                 <div className='post-body'>
                     <div className="App">
 
-                        {postDetails.map((post, index) => (
                             <Post
-                                imageSrc={post.url}
-                                altText={post.heading}
-                                overlayText={post.description}
                                 redirectTo="/target-path/"
                                 widthInPx="500px"
-                                postIndex={index}
+                                posts={postDetails}
+                                isActive={false}
                             />
-
-                        ))
-
-                        }
+                            
                     </div>
                     <div className='post-ads-sidebar'>
                         <img src={sideBarAds} className='side-bar-ad' />
