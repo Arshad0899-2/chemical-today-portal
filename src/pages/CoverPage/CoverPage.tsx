@@ -48,7 +48,21 @@ const CoverPage: React.FC = () => {
 
                 </div>
 
-                <div>
+                <div className='spotlight'>
+                    <div className='cover-post-heading'>
+                        <h3 className='cover-post-heading-text'>Spotlight</h3>
+                        <a href='#' className='viewMoreImg'>
+                            <img src={viewMore} />
+                        </a>
+                    </div>
+                    <div className='spotlight-body'>
+                        <div>
+
+                        </div>
+                        <div className='spotlight-ads'>
+
+                        </div>
+                    </div>
 
                 </div>
 

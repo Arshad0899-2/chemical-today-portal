@@ -157,3 +157,9 @@
     font-weight: 600;
     margin-bottom: 30px;
 }
+
+.spotlight-ads {
+    width: 100%;
+    background-image: url('../../assets/home-page-assets/largeAds.svg');
+    height: 200px;
+}
