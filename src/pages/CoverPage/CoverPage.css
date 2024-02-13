@@ -35,6 +35,39 @@
     transform: scale(0.7);
 }
 
+.cover-sustainability-body {
+    display: flex;
+    gap: 10px;
+}
+
+.sustain-img-body {
+    position: relative;
+}
+
+.sustain-img {
+    width: 250px;
+}
+
+.sustain-caption {
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+    text-wrap: wrap;
+    opacity: 0.8;
+    font-size: 14px;
+    color: white; /* Text color */
+    padding: 5px 10px /* Add some padding */
+}
+
 .viewMoreImg:hover {
     cursor: pointer;
+}
+
+.sustain-ads {
+    display: flex;
+    width: 10px;
+}
+
+.sustain-ads-img {
+    width: 120px;
 }

@@ -5,6 +5,8 @@ import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import posts from '../../utils/posts';
 import Post from '../../components/ui/Post/Post';
 import viewMore from '../../assets/home-page-assets/view-more.svg';
+import greyImg from '../../assets/home-page-assets/grayTempImg.svg';
+import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 
 const CoverPage: React.FC = () => {
 
@@ -76,6 +78,33 @@ const CoverPage: React.FC = () => {
                 </div>
 
                 <div>
+                    <div className='cover-post-heading'>
+                        <h3 className='cover-post-heading-text'>Sustainability</h3>
+                        <a href='#' className='viewMoreImg'>
+                            <img src={viewMore} />
+                        </a>
+                    </div>
+                    <div className='cover-sustainability-body'>
+                        <a className='sustain-img-body'>
+                            <img src={greyImg} className='sustain-img' />
+                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
+                        </a>
+                        <a className='sustain-img-body'>
+                            <img src={greyImg} className='sustain-img' />
+                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
+                        </a>
+                        <a className='sustain-img-body'>
+                            <img src={greyImg} className='sustain-img' />
+                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
+                        </a>
+                        <a className='sustain-img-body'>
+                            <img src={greyImg} className='sustain-img' />
+                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
+                        </a>
+                        <div className='sustain-ads'>
+                            <img src = {blueAds} className='sustain-ads-img'/>
+                        </div>
+                    </div>
 
                 </div>
 
