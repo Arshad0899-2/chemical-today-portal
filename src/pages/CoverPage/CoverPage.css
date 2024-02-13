@@ -156,6 +156,13 @@
     line-height: 20px;
     font-weight: 600;
     margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.equip-desc:hover {
+    cursor: pointer;
+    opacity: 1.9;
+    font-size: 16;
 }
 
 .spotlight-ads {
