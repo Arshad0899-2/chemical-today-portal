@@ -69,5 +69,48 @@
 }
 
 .sustain-ads-img {
-    width: 120px;
+    width: 18vw;
+} 
+
+.event-ads-img {
+    width: 20vw;
+}
+
+.cover-event-body-img {
+    width: 76%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.event-img-btn {
+    display: flex;
+    margin: 80px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.event-img-btn:hover {
+    border: 1px solid #fff;
+}
+
+.event-img {
+    width: 32vw;
+    height: 220px;
+    background-image: url('../../assets/home-page-assets/grayTempImg.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cover-event-body {
+    display: flex;
+    
+}
+
+.event-ads {
+    width: 20vw;
 }

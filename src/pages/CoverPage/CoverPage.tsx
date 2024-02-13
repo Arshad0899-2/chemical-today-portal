@@ -6,6 +6,7 @@ import posts from '../../utils/posts';
 import Post from '../../components/ui/Post/Post';
 import viewMore from '../../assets/home-page-assets/view-more.svg';
 import greyImg from '../../assets/home-page-assets/grayTempImg.svg';
+import squareAd from '../../assets/home-page-assets/squareGray.svg';
 import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 
 const CoverPage: React.FC = () => {
@@ -73,8 +74,32 @@ const CoverPage: React.FC = () => {
 
                 </div>
 
-                <div>
-
+                <div className='cover-post'>
+                    <div className='cover-post-heading'>
+                        <h3 className='cover-post-heading-text'>Event</h3>
+                        <a href='#' className='viewMoreImg'>
+                            <img src={viewMore} />
+                        </a>
+                    </div>
+                    <div className='cover-event-body'>
+                        <div className='cover-event-body-img'>
+                            <div className='event-img'>
+                                <button className='event-img-btn'>New Industry</button>
+                            </div>
+                            <div className='event-img'>
+                                <button className='event-img-btn'>New Industry</button>
+                            </div>
+                            <div className='event-img'>
+                                <button className='event-img-btn'>New Industry</button>
+                            </div>
+                            <div className='event-img'>
+                                <button className='event-img-btn'>New Industry</button>
+                            </div>
+                        </div>
+                        <div className='event-ads'>
+                            <img src={squareAd} className='event-ads-img' />
+                        </div>
+                    </div>
                 </div>
 
                 <div>
@@ -102,7 +127,7 @@ const CoverPage: React.FC = () => {
                             <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
                         </a>
                         <div className='sustain-ads'>
-                            <img src = {blueAds} className='sustain-ads-img'/>
+                            <img src={blueAds} className='sustain-ads-img' />
                         </div>
                     </div>
 
