@@ -3,6 +3,7 @@ import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import blackImg from "../../assets/home-page-assets/Post-assets/blank_img.svg"
 import { PostInsiderConstants } from "../../utils/constants";
 import Details from '../../components/ui/Details/Details';
+import { sampleTest } from '../../utils/constants';
 
 const PostInsider: React.FC = () => {
 
@@ -25,7 +26,31 @@ const PostInsider: React.FC = () => {
                     </div>
 
                     <div className='sidebar-ads'>
-
+                        <div>
+                            <div className='latest-updates'>
+                                Latest Updates
+                            </div>
+                            <div className='updates'>
+                                {sampleTest}
+                            </div>
+                            <div className='updates'>
+                                {sampleTest}
+                            </div>
+                            <div className='updates'>
+                                {sampleTest}
+                            </div>
+                            <div className='updates last-update'>
+                                {sampleTest}
+                            </div>
+                        </div>
+                        <div className='insider-ads'>
+                            <div className='indiser-ad-div'>
+                            </div>
+                            <div className='indiser-ad-div'>
+                            </div>
+                            <div className='indiser-ad-div'>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

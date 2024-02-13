@@ -6,7 +6,6 @@ import posts from '../../utils/posts';
 import Post from '../../components/ui/Post/Post';
 import viewMore from '../../assets/home-page-assets/view-more.svg';
 import greyImg from '../../assets/home-page-assets/grayTempImg.svg';
-import squareAd from '../../assets/home-page-assets/squareGray.svg';
 import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 
 const CoverPage: React.FC = () => {

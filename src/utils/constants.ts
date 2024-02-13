@@ -18,6 +18,7 @@ export const CoverPageHeaderConstants:any = {
     chemicalTodayTV:"Chemical Today TV"
 }
 
+export const sampleTest: string = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
 
 export const PostInsiderConstants:any = {
      postType :"Industries",
