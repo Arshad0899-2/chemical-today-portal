@@ -110,5 +110,14 @@
 }
 
 .event-ads {
+    background-image: url('../../assets/home-page-assets/squareGray.svg');
     width: 20vw;
+}
+
+.largeAds {
+    background-image: url('../../assets/home-page-assets/largeAds.svg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    width: 100%;
+    height: 120px; /* Adjust as needed */
 }

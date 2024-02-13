@@ -71,7 +71,17 @@ const CoverPage: React.FC = () => {
                 </div>
 
                 <div>
-
+                    <div className='cover-post-heading'>
+                        <h3 className='cover-post-heading-text'>Equipment</h3>
+                        <a href='#' className='viewMoreImg'>
+                            <img src={viewMore} />
+                        </a>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div className='largeAds'>
+                    </div>
                 </div>
 
                 <div className='cover-post'>
@@ -97,7 +107,6 @@ const CoverPage: React.FC = () => {
                             </div>
                         </div>
                         <div className='event-ads'>
-                            <img src={squareAd} className='event-ads-img' />
                         </div>
                     </div>
                 </div>
