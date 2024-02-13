@@ -98,7 +98,7 @@
 
 .event-img {
     width: 32vw;
-    height: 220px;
+    height: 30vh;
     background-image: url('../../assets/home-page-assets/grayTempImg.svg');
     display: flex;
     justify-content: center;
