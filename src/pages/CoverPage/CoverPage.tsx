@@ -76,8 +76,37 @@ const CoverPage: React.FC = () => {
                             <img src={viewMore} />
                         </a>
                     </div>
-                    <div>
-                        
+                    <div className='euip-items'>
+                        <div className='euip-item'>
+                            <div className='equip-img'></div>
+                            <div className='equip-title'>Equipment Name</div>
+                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div>
+                        <div className='euip-item'>
+                            <div className='equip-img'></div>
+                            <div className='equip-title'>Equipment Name</div>
+                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div>
+                        <div className='euip-item'>
+                            <div className='equip-img'></div>
+                            <div className='equip-title'>Equipment Name</div>
+                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div>
+                        <div className='euip-item'>
+                            <div className='equip-img'></div>
+                            <div className='equip-title'>Equipment Name</div>
+                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div>
+                        <div className='euip-item'>
+                            <div className='equip-img'></div>
+                            <div className='equip-title'>Equipment Name</div>
+                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div>
+                        <div className='euip-item'>
+                            <div className='equip-img'></div>
+                            <div className='equip-title'>Equipment Name</div>
+                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div>
                     </div>
                     <div className='largeAds'>
                     </div>
