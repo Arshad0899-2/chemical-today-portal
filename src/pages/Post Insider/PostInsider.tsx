@@ -31,16 +31,16 @@ const PostInsider: React.FC = () => {
                                 Latest Updates
                             </div>
                             <div className='updates'>
-                                {sampleTest}
+                                <a href='#'>{sampleTest}</a>
                             </div>
                             <div className='updates'>
-                                {sampleTest}
+                                <a href='#'>{sampleTest}</a>
                             </div>
                             <div className='updates'>
-                                {sampleTest}
+                                <a href='#'>{sampleTest}</a>
                             </div>
                             <div className='updates last-update'>
-                                {sampleTest}
+                                <a href='#'>{sampleTest}</a>
                             </div>
                         </div>
                         <div className='insider-ads'>

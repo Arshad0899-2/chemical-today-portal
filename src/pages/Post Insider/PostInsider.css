@@ -62,3 +62,12 @@
     height: 250px;
 }
 
+.updates > a {
+    color: #000;
+}
+
+.updates > a:hover {
+    color: #000;
+    opacity: 0.7;
+}
+
