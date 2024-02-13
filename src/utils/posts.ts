@@ -81,12 +81,12 @@ const posts: PostInfo[] = [
         heading: "Image Twelve",
         description: "Image Twelve showcases a night scene, with a description that delves into the challenges of night photography and the vibrant elements captured."
     },
-    {
-        id: 13,
-        url: blankImg,
-        heading: "Image Thirteen",
-        description: "This image is focused on nature, with a description discussing the natural elements, the time of year, and what makes this view unique."
-    },
+    // {
+    //     id: 13,
+    //     url: blankImg,
+    //     heading: "Image Thirteen",
+    //     description: "This image is focused on nature, with a description discussing the natural elements, the time of year, and what makes this view unique."
+    // },
     // {
     //     url: blankImg,
     //     heading: "Image Fourteen",
