@@ -11,3 +11,30 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.cover-post-heading {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cover-post-heading-text {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 45px;
+    width: max-content;
+    margin-bottom: 0px;
+}
+
+.viewMoreImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    transform: scale(0.7);
+}
+
+.viewMoreImg:hover {
+    cursor: pointer;
+}

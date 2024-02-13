@@ -50,6 +50,7 @@ const Post: React.FC<PostProps> = ({
                     <div className="img-text">
                         <p className='text'>{post.heading}</p>
                     </div>
+                    {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
                     <p className='overlay-text'>{post.description}</p>
                 </div >
             ))
