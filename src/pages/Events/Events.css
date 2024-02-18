@@ -1,0 +1,50 @@
+.events-header {
+    background-color: #821BC3;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.webinar {
+    margin-bottom: 0px;
+}
+
+
+.events-header-body:first-child {
+    border: 2px solid gray;
+}
+
+
+.join-now-btn {
+    background-color: #821BC3;
+    border: 1.6px solid rgb(221, 216, 216);
+    color: white;
+    border-radius: 6px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+.events-header-info {
+    font-size: 30px;
+    font-style: 'Roboto';
+    margin: 5px 0px 25px;
+}
+
+.event-box {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.event-time {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+
+.events-header-body {
+    width: 90%;
+    color: white;
+    display: flex;
+    margin: auto;
+}

@@ -3,6 +3,7 @@ import './CoverPageHeader.css';
 import companyLogo from "../../assets/header-assets/company-logo.svg";
 import magzineCover from "../../assets/header-assets/magzine_cover.png";
 import { CoverPageHeaderConstants } from "../../utils/constants";
+import { Link } from 'react-router-dom';
 
 const CoverPageHeader: React.FC = () => {
 
@@ -17,14 +18,16 @@ const CoverPageHeader: React.FC = () => {
                     </div>
 
                     <div className="header-actions">
-                        <div className='divider'></div>
+                        <div className='header-divider'></div>
                         <img className="magazineCoverImg" src={magzineCover} alt="magazine cover" />
                         <div className='read-more'>
                             <p className='readMoreTest'> {CoverPageHeaderConstants.readMoreText} </p>
-                            <div className='read-more-button'>
-                                <p> {CoverPageHeaderConstants.readHere}</p>
-                                <p className='arrow'>&rarr;</p>
-                            </div>
+                            <Link to='/editorial'>
+                                <div className='read-more-button'>
+                                    <p> {CoverPageHeaderConstants.readHere}</p>
+                                    <p className='arrow'>&rarr;</p>
+                                </div>
+                            </Link>
                         </div>
                         <div className="header-btn">
                             <a className="btn"> {CoverPageHeaderConstants.downloadApp} </a>
@@ -43,9 +46,7 @@ const CoverPageHeader: React.FC = () => {
 
                 <div className='navigation'>
                     {CoverPageHeaderConstants.navElements.map((text: string) => (
-                        <a className='item'>{text}</a>
-                        // Use the below to route
-                        // <Link className='item' to={'#'}>{ text } <Link/>
+                        <Link to={text.toLocaleLowerCase()} className='item'>{text}</Link>
                     ))}
                 </div>
             </header >

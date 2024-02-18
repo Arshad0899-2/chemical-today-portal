@@ -1,0 +1,54 @@
+.post-card2 {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin: auto; /* Adjust to match the margin space of the horizontal ads */
+    width: 90%;
+}
+
+.image {
+    width: 600px; /* Adjust as needed */
+    height: 300px;
+    margin: 20px;
+    margin-left: 3px;
+}
+.content {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 3px;
+}
+
+.heading {
+    margin-top: 20px;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    /* background-color: #007bff; */
+    color: red;
+    border: none;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+    /* position: relative; */
+}
+
+/* .learn-more:hover {
+    background-color: #0056b3; 
+} */
+
+/* .learn-more::after {
+    position: absolute; */
+    /* top: 50%; */
+    /* right: -10px; Adjust as needed */
+    /* transform: translateY(-50%);
+} */

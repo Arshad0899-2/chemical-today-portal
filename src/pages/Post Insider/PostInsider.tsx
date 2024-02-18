@@ -7,6 +7,8 @@ import { sampleTest } from '../../utils/constants';
 
 const PostInsider: React.FC = () => {
 
+const PostInsiderConstant = PostInsiderConstants[0];
+
     return (
         <>
             <div className='post-insider-main'>
@@ -14,14 +16,14 @@ const PostInsider: React.FC = () => {
                 <div className='post-insider-body'>
                     <div className='post-details'>
                         <Details
-                            postType={PostInsiderConstants.postType}
-                            title={PostInsiderConstants.title}
-                            publishedCompany={PostInsiderConstants.publishedCompany}
-                            publishedDate={PostInsiderConstants.publishedDate}
-                            share={PostInsiderConstants.share}
+                            postType={PostInsiderConstant.postType}
+                            title={PostInsiderConstant.title}
+                            publishedCompany={PostInsiderConstant.publishedCompany}
+                            publishedDate={PostInsiderConstant.publishedDate}
+                            share={PostInsiderConstant.share}
                             postImg={blackImg}
-                            postImgTitle={PostInsiderConstants.PostImgTitle}
-                            postDesc={PostInsiderConstants.postDesc}
+                            postImgTitle={PostInsiderConstant.PostImgTitle}
+                            postDesc={PostInsiderConstant.postDesc}
                         />
                     </div>
 

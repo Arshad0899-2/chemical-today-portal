@@ -1,0 +1,46 @@
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* .post-heading {
+    text-align: center;
+} */
+
+.post-body {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+}
+
+.side-bar-ad {
+    width: 300px;
+}
+
+.post-ads-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-type-text {
+    background-color: #161212;
+    color: #f6eded;
+    height: 35px;
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+.divider {
+    width: 90%; /* Same width as the horizontal-ads image */
+    border-bottom: 2px solid #8f8888; /* Style of the divider line */
+    margin: 0 auto; /* Center the divider */
+    margin-bottom: 40px;
+}

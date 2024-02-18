@@ -24,16 +24,16 @@ const Post: React.FC<PostProps> = ({
         flexDirection: 'column',
         flex: '0 1 calc(33.333% - 10px)',
         marginBottom: '10px',
-    }
+   }
 
-    const sidePostStyle: React.CSSProperties = {
-        width: widthInPx,
-        display: 'flex',
-        flexDirection: 'column',
-        flex: '0 1 calc(33.333% - 10px)',
-        marginRight: '15px',
-        marginBottom: '10px',
-    }
+    // const sidePostStyle: React.CSSProperties = {
+    //     width: widthInPx,
+    //     display: 'flex',
+    //     flexDirection: 'column',
+    //     flex: '0 1 calc(33.333% - 10px)',
+    //     // marginRight: '15px',
+    //     marginBottom: '10px',
+    // }
 
     const postDetails = posts;
 
@@ -45,7 +45,7 @@ const Post: React.FC<PostProps> = ({
 
             {postDetails.map((post) => (
 
-                < div style={isActive ? postStyle : sidePostStyle} className='postStyle' onClick={handleRedirectAndApiCall} >
+                < div style={ postStyle }  onClick={handleRedirectAndApiCall} >
                     <img src={post.url} />
                     <div className="img-text">
                         <p className='text'>{post.heading}</p>

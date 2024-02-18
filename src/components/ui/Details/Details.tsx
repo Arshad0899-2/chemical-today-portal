@@ -25,9 +25,9 @@ const Details: React.FC<DetailsProps> = ({
     return (
         <>
             <div className="post-type">
-                <p className='post-type-text'>{postType}</p>
+                <p className='post-insider-type'>{postType}</p>
             </div>
-            <h1 className='title'>{title}</h1>
+            <h1 className='post-insider-title'>{title}</h1>
             <div className='post-info'>
                 <p>{publishedCompany}</p>
                 <p>{publishedDate}</p>

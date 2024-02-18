@@ -7,7 +7,7 @@ interface PostInfo {
 // import blankImg from "../assets/home-page-assets/Post-assets/blank_img.svg";
 import blankImg from "../assets/home-page-assets/Post-assets/sample_chemical.png";
 
-const posts: PostInfo[] = [
+const insider: PostInfo[] = [
     {
         url: blankImg,
         heading: "Image One",
@@ -110,4 +110,4 @@ const posts: PostInfo[] = [
     // }
 ];
 
-export default posts;
+export default insider;

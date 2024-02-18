@@ -1,0 +1,160 @@
+.horizontal-ads {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.horizontal-ads img {
+    height: auto;
+    max-height: 120px;
+    margin-left: 20px; /* Adjust the left margin */
+    margin-right: 20px; /* Adjust the right margin */
+}
+
+
+
+.mainBanner {
+    width: 100%;
+    max-width: 2200px;
+    object-fit: fill;
+}
+
+.mainBanner-image {
+    width: 100%;
+    height: 400px;
+}
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+.container {
+    position: relative;
+}
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+/* WhitePage.css */
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+/* WhitePage.css */
+
+/* Existing CSS for .horizontal-ads remains unchanged */
+
+.post-type-text {
+    background-color: #161212;
+    color: #f6eded;
+    height: 35px;
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-left: 150px;
+    margin-top: 40px;
+    font-weight: bold; 
+}
+
+.divider {
+    width: 80%; /* Same width as the horizontal-ads image */
+    border-bottom: 2px solid #8f8888; /* Style of the divider line */
+    margin: 0 auto; /* Center the divider */
+}
+
+.App {
+    margin-top: 40px;
+    margin-left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.post-heading {
+    text-align: center;
+}
+
+/* .post-body {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+} */
+
+
+.post-body {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: center; /* Center align flex items horizontally */
+    gap: 20px; /* Gap between post cards */
+    width: 50%; /* Adjusted width */
+    margin: auto;
+}
+
+.post-card {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust width to fit three cards in a row with gap */
+    max-width: calc(33.33% - 20px); /* Adjust maximum width */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.post-card img {
+    width: 100%; /* Make sure the image fills the post card */
+}
+
+
+.image-container {
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align images horizontally */
+}
+
+.image {
+    width: calc(25% - 50px); /* Adjust width of each image */
+    /* For example, with 4 images per row, each image takes 25% of the container width */
+    /* Subtracting gap width to avoid overflow */
+    max-width: calc(25% - 50px); /* Ensure images don't exceed 25% of container width */
+    margin: 5px; /* Adjust margin to create space between images */
+    background-color: #706cad; /* Change the background color of the rectangles */
+    /* Add more styling as needed */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .image {
+        width: calc(50% - 50px); /* Adjust width for two images per row */
+        max-width: calc(50% - 50px); /* Ensure images don't exceed 50% of container width */
+    }
+}

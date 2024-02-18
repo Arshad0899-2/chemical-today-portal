@@ -1,0 +1,105 @@
+.post-insider-body {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+}
+
+.post-insider-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.post-details {
+    height: 100%;
+    width: 80%;
+    padding-right: 50px;
+    margin-right: 5px;
+}
+
+.rand-insider-post {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.sidebar-ads {
+    width: 30%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* 
+.post-type-text {
+    background-color: #161212;
+    color: #f6eded;
+    height: 35px;
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-left: 75px;
+    margin-top: 40px;
+} */
+
+.divider {
+    width: 90%; /* Same width as the horizontal-ads image */
+    border-bottom: 2px solid #8f8888; /* Style of the divider line */
+    margin: 0 auto; /* Center the divider */
+}
+
+/* .learn-more {
+    color: red; /* Set the color to red */
+    /* margin-left: auto; Push it to the right end
+    margin-right: 75px; Adjust the margin for spacing */
+/* }  */
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Align items at the opposite ends */
+    align-items: center; /* Vertically center items */
+    margin-left: 75px; /* Adjust margins as needed */
+    margin-right: 75px;
+    margin-top: 40px;
+}
+
+.post-text {
+    background-color: black;
+    color: #FFF;
+    height: 35px;
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+/* .rectangular-box{
+    background-color: #0f0e0e;
+    color: #f6eded;
+} */
+
+
+
+.learn-more {
+    color: red;
+}
+
+
+.App {
+    margin-top: 40px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

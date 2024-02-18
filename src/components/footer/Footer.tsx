@@ -32,12 +32,6 @@ const Footer: React.FC = () => {
                             <a href='#' className="footer-links"> { FooterConstants.chemSquare } </a>
                         </div>
                         <div className="our-brands">
-                            <h5 className="our-brands-heading"> { FooterConstants.quickLinks } </h5>
-                            <a href='#' className="footer-links"> { FooterConstants.stocks } </a>
-                            <a href='#' className="footer-links"> { FooterConstants.becomeEliteMember } </a>
-                            <a href='#' className="footer-links"> { FooterConstants.jobs } </a>
-                        </div>
-                        <div className="our-brands">
                             <h5 className="our-brands-heading"> { FooterConstants.usefulLinks } </h5>
                             <a href='#' className="footer-links"> { FooterConstants.blogs } </a>
                             <a href='#' className="footer-links"> { FooterConstants.articles } </a>
@@ -56,8 +50,6 @@ const Footer: React.FC = () => {
                             <img src={companyLogo} className="footer-logo" />
                         </div>
                         <div className="footer-icons">
-                            <div className="footer-icon"></div>
-                            <div className="footer-icon"></div>
                             <div className="footer-icon"></div>
                             <div className="footer-icon"></div>
                             <div className="footer-icon"></div>

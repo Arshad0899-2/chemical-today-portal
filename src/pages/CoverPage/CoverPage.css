@@ -51,6 +51,18 @@
     padding-top: 10px;
 }
 
+@media screen and (max-width: 1355px) {
+
+    .latest-text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    
+}
+
 .latest-text > div {
     width: 45%;
     padding: 0PX 10PX;
@@ -107,6 +119,7 @@
 .cover-post-items {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .cover-post-heading {
@@ -346,7 +359,7 @@
 }
 
 .insights-items {
-    width: 300px;
+    width: auto;
 }
 
 .insights-btn {
@@ -372,7 +385,7 @@
 }
 
 .insights-ads {
-    height: auto;
-    width: 10%;
+    height: 200px;
+    width: 100%;
     background-image: url('../../assets/home-page-assets//squareGray.svg');
 }

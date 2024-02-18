@@ -1,6 +1,5 @@
 import React from 'react';
 import './CoverPage.css';
-import CoverPageHeader from '../../components/Cover-page-Header/CoverPageHeader';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import posts from '../../utils/posts';
 import Post from '../../components/ui/Post/Post';
@@ -9,6 +8,7 @@ import greyImg from '../../assets/home-page-assets/grayTempImg.svg';
 import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 import blankImg from "../../assets/home-page-assets/Post-assets/blank_img.svg";
 import editorsChoice from "../../assets/home-page-assets/editors-choice.png";
+import CoverPageHeader from '../../components/Cover-page-Header/CoverPageHeader';
 
 const CoverPage: React.FC = () => {
 
@@ -32,7 +32,6 @@ const CoverPage: React.FC = () => {
     return (
         <>
             <CoverPageHeader></CoverPageHeader>
-
             <img className='horizantal-ads' src={TempAds} alt="Advertize" />
             <div className='main-body'>
 
@@ -106,7 +105,7 @@ const CoverPage: React.FC = () => {
                         < div className='insights-items'>
                             <div className='insights-item'>orem Ipsum is simply dummy text of the printing</div>
                             <div className="img-text">
-                                <p className='text'>Repots   </p>
+                                <p className='text'>Repots</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
                             <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -115,7 +114,7 @@ const CoverPage: React.FC = () => {
                         < div className='insights-items'>
                             <div className='insights-item'>orem Ipsum is simply dummy text of the printing</div>
                             <div className="img-text">
-                                <p className='text'>Case Studies   </p>
+                                <p className='text'>Case Studies</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
                             <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -124,7 +123,7 @@ const CoverPage: React.FC = () => {
                         < div className='insights-items'>
                             <div className='insights-item'>orem Ipsum is simply dummy text of the printing</div>
                             <div className="img-text">
-                                <p className='text'>White Paper   </p>
+                                <p className='text'>White Paper</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
                             <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -133,15 +132,15 @@ const CoverPage: React.FC = () => {
                         < div className='insights-items'>
                             <div className='insights-item'>orem Ipsum is simply dummy text of the printing</div>
                             <div className="img-text">
-                                <p className='text'>Repots   </p>
+                                <p className='text'>Repots</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
                             <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <button className='insights-btn'>Read More</button>
                         </div >
+                    </div>
                         <div className='insights-ads'>
                         </div>
-                    </div>
 
                 </div>
 
