@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './CoverPage.css';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import posts from '../../utils/posts';
@@ -9,8 +9,29 @@ import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 import blankImg from "../../assets/home-page-assets/Post-assets/blank_img.svg";
 import editorsChoice from "../../assets/home-page-assets/editors-choice.png";
 import CoverPageHeader from '../../components/Cover-page-Header/CoverPageHeader';
+import { SmallCoverPageHeader } from '../../components/Small-Cover-page-Header/SmallCoverPageHeader';
 
-const CoverPage: React.FC = () => {
+interface IBodyProps {
+    toggleDrawer: () => void;
+  }
+  
+
+const CoverPage: React.FC<IBodyProps> = ({ toggleDrawer }) => {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
 
     const postDetails = posts;
     const singlePost = {
@@ -29,9 +50,11 @@ const CoverPage: React.FC = () => {
         marginBottom: '10px',
     }
 
+    const breakpoint = 1200;
+
     return (
         <>
-            <CoverPageHeader></CoverPageHeader>
+            {windowWidth >= breakpoint ? <CoverPageHeader /> : <SmallCoverPageHeader toggleDrawer={toggleDrawer} />}
             <img className='horizantal-ads' src={TempAds} alt="Advertize" />
             <div className='main-body'>
 

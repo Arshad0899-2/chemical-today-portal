@@ -1,0 +1,31 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .drawer.open {
+    width: 250px; /* Adjust width as needed */
+  }
+  
+  .drawer-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  
+  .drawer-content {
+    background-color: #fff;
+    height: 100%;
+  }
+  

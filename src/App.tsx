@@ -22,8 +22,9 @@ import WhiteInsider from './pages/WhiteInsider/WhiteInsider'
 import WhitePage from './pages/WhitePage/WhitePage'
 import Events from './pages/Events/Events'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { createElement, useEffect, useState } from 'react'
 import { Editorial } from './pages/Editorial/Editorial'
+import Drawer from './components/Drawer/Drawer'
 
 function App() {
 
@@ -34,28 +35,37 @@ function App() {
     useEffect(() => {
       setShowHeader(location.pathname !== '/');
     }, [location]);
-    return null; 
+    return null;
   }
+
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
 
   return (
     <>
       <BrowserRouter>
-        <div>
-          <HeaderVisibilityController />
-          {true && <CoverPageHeader />}
-          {/* <Routes>
-              <Route path='/' Component={CoverPage} />
-              <Route path='/posts' Component={PostPage} />
-              <Route path='/spotlight' Component={SustainPage} />
-              <Route path='/events' Component={Events} />
-              <Route path='/post-insider' Component={PostInsider} />
-              <Route path='/sustainability' Component={SustainPage} />
-              <Route path='/digitalization' Component={CoverPage} />
-              <Route path='/product' Component={ProductInsider} />
-              <Route path='/editorial' Component={Editorial} />
-          </Routes> */}
-          {/* <Footer></Footer> */}
-        </div>
+        <HeaderVisibilityController />
+
+        {showHeader && <Header />}
+        <CoverPage toggleDrawer={toggleDrawer} />
+        {true && <Drawer />}
+
+        <Routes>
+          <Route path='/' element={createElement(CoverPage, { toggleDrawer })} />
+          <Route path='/posts' Component={PostPage} />
+          <Route path='/spotlight' Component={SustainPage} />
+          <Route path='/events' Component={Events} />
+          <Route path='/post-insider' Component={PostInsider} />
+          <Route path='/sustainability' Component={SustainPage} />*
+          <Route path='/digitalization' element={createElement(CoverPage, { toggleDrawer })} />
+          <Route path='/product' Component={ProductInsider} />
+          <Route path='/editorial' Component={Editorial} />
+        </Routes>
+
+        <Footer></Footer>
 
       </BrowserRouter>
 

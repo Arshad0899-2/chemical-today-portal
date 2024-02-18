@@ -30,9 +30,9 @@ const CoverPageHeader: React.FC = () => {
                             </Link>
                         </div>
                         <div className="header-btn">
-                            <a className="btn"> {CoverPageHeaderConstants.downloadApp} </a>
-                            <a className="btn"> {CoverPageHeaderConstants.magazineSubscribe} </a>
-                            <a className="btn"> {CoverPageHeaderConstants.chemicalTodayTV} </a>
+                            <a className="header-util-btn"> {CoverPageHeaderConstants.downloadApp} </a>
+                            <a className="header-util-btn"> {CoverPageHeaderConstants.magazineSubscribe} </a>
+                            <a className="header-util-btn"> {CoverPageHeaderConstants.chemicalTodayTV} </a>
                         </div>
                     </div>
 
