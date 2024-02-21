@@ -14,24 +14,21 @@ const PostPage: React.FC = () => {
         <>
                 <img className='horizantal-ads' src={TempAds} alt="Advertize" />
                 <div>
-                    <h2 className='post-heading'>{ PostPageConstants.title }</h2>
+                    <h2 className='text-2xl font-semibold post-heading'>{ PostPageConstants.title }</h2>
                 </div>
 
-                <div className='post-body'>
-                    <div className="App">
+                <div className='post-body-cont'>
+                    <div className="post-cards">
 
                             <Post
                                 redirectTo="/target-path/"
-                                widthInPx="500px"
+                                widthInPx="auto"
                                 posts={postDetails}
                                 isActive={false}
                             />
                             
                     </div>
-                    <div className='post-ads-sidebar'>
-                        <img src={sideBarAds} className='side-bar-ad' />
-                        <img src={sideBarAds} className='side-bar-ad' />
-                        <img src={sideBarAds} className='side-bar-ad' />
+                    <div className='post-ads-cont'>
                         <img src={sideBarAds} className='side-bar-ad' />
                         <img src={sideBarAds} className='side-bar-ad' />
                         <img src={sideBarAds} className='side-bar-ad' />

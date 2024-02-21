@@ -4,6 +4,7 @@ import companyLogo from "../../assets/header-assets/company-logo.svg";
 import magzineCover from "../../assets/header-assets/magzine_cover.png";
 import { CoverPageHeaderConstants } from "../../utils/constants";
 import { Link } from 'react-router-dom';
+import Drawer from '../Drawer/Drawer';
 
 const CoverPageHeader: React.FC = () => {
 
@@ -50,6 +51,7 @@ const CoverPageHeader: React.FC = () => {
                     ))}
                 </div>
             </header >
+
         </>
     );
 };

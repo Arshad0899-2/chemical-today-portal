@@ -39,7 +39,8 @@
 .overlay-text {
     text-wrap: wrap;
     line-height: 18px;
-    font-size: 14px;
+    font-size: 1rem;
+    padding-top: 1rem;
     font-weight: bold;
 }
 

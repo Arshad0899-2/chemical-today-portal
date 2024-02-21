@@ -5,8 +5,8 @@
 
 .main-sm-header {
     display: flex;
-    padding: 30px 0px;
-    width: 90%;
+    padding: 30px 0px 15px;
+    width: 96%;
     margin: auto;
     justify-content: space-between;
 }
@@ -18,19 +18,22 @@
 }
 
 .company-logo-sm {
-    width: 100px;
+    width: 110px;
 }
 
 .header-flex-sm {
     display: flex;
+    padding-bottom: 5px;
 }
 
 .header-search-sm {
     padding: 0px 0px;
     margin-top: 10px;
+    margin-right: 40px;
 }
 
 .header-search-icon-sm {
     width: 32px;
     height: 32px;
 }
+

@@ -10,6 +10,7 @@ import blankImg from "../../assets/home-page-assets/Post-assets/blank_img.svg";
 import editorsChoice from "../../assets/home-page-assets/editors-choice.png";
 import CoverPageHeader from '../../components/Cover-page-Header/CoverPageHeader';
 import { SmallCoverPageHeader } from '../../components/Small-Cover-page-Header/SmallCoverPageHeader';
+import Drawer from '../../components/Drawer/Drawer';
 
 interface IBodyProps {
     toggleDrawer: () => void;
@@ -17,22 +18,7 @@ interface IBodyProps {
   
 
 const CoverPage: React.FC<IBodyProps> = ({ toggleDrawer }) => {
-
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-
+    
     const postDetails = posts;
     const singlePost = {
         id: 1,
@@ -50,11 +36,8 @@ const CoverPage: React.FC<IBodyProps> = ({ toggleDrawer }) => {
         marginBottom: '10px',
     }
 
-    const breakpoint = 1200;
-
     return (
         <>
-            {windowWidth >= breakpoint ? <CoverPageHeader /> : <SmallCoverPageHeader toggleDrawer={toggleDrawer} />}
             <img className='horizantal-ads' src={TempAds} alt="Advertize" />
             <div className='main-body'>
 

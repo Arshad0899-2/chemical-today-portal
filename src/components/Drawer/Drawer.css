@@ -1,31 +1,31 @@
 .drawer {
-    position: fixed;
-    top: 0;
+    position: absolute;
     left: 0;
-    width: 0;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transition: 0.5s;
-    z-index: 1000; /* Ensure it's above other content */
+    width: 100%;
+    z-index: 2; 
   }
-  
+
   .drawer.open {
-    width: 250px; /* Adjust width as needed */
+    width: 100%;
+    display: flex;
+    height: calc(100% - var(--dynamicHeaderHeaight));
   }
   
   .drawer-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    width: 78%;
+    background: rgba(0, 0, 0, 0.586);
     z-index: -1;
   }
   
   .drawer-content {
-    background-color: #fff;
+    background-color: #fffffff7;
     height: 100%;
+    overflow: auto;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
   }
   
+  ::-webkit-scrollbar {
+    display: none; /* Adjust the width as needed */
+}
