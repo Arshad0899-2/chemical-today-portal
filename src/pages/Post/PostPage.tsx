@@ -24,7 +24,7 @@ const PostPage: React.FC = () => {
                                 redirectTo="/target-path/"
                                 widthInPx="auto"
                                 posts={postDetails}
-                                isActive={false}
+                                isActive={true}
                             />
                             
                     </div>

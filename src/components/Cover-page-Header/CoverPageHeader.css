@@ -33,6 +33,12 @@
         font-size: 14px;
     }
 
+    .insights-menu-item {
+        color: #000;
+        text-wrap: nowrap;
+        line-height: 2.2rem;
+    }
+
     .logo {
         width: 285px;
         height: 120px;
@@ -119,6 +125,11 @@
         font-size: 0.8rem;
     }
 
+    .insights-menu-item {
+        color: #000;
+        text-wrap: nowrap;
+        line-height: 2rem;
+    }
 
     .text-info {
         margin: auto;
@@ -218,7 +229,9 @@
 
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1340px) {
+/* 1185 need to work */
+
+@media screen and (min-width: 1185px) and (max-width: 1340px) {
 
     .header {
         background-color: black;
@@ -326,6 +339,12 @@
         display: flex;
     }
 
+    .insights-menu-item {
+        color: #000;
+        text-wrap: nowrap;
+        line-height: 1.7rem;
+    }
+
 }
 
 .header-top {
@@ -391,6 +410,21 @@
     opacity: 0.9;
 }
 
-.drawer-menu {
-    
+.insights-menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.dropdown-container {
+    padding: 2rem 8rem;
+}
+
+.insights-menu-item {
+    color: #000;
+    text-wrap: nowrap;
+}
+
+.insights-menu-item:hover {
+    color: #5f5c5c;
 }

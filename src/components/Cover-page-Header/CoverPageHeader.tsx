@@ -4,7 +4,6 @@ import companyLogo from "../../assets/header-assets/company-logo.svg";
 import magzineCover from "../../assets/header-assets/magzine_cover.png";
 import { CoverPageHeaderConstants } from "../../utils/constants";
 import { Link } from 'react-router-dom';
-import Drawer from '../Drawer/Drawer';
 
 const CoverPageHeader: React.FC = () => {
 
@@ -46,9 +45,65 @@ const CoverPageHeader: React.FC = () => {
                 </div>
 
                 <div className='navigation'>
-                    {CoverPageHeaderConstants.navElements.map((text: string) => (
-                        <Link to={text.toLocaleLowerCase()} className='item'>{text}</Link>
-                    ))}
+                    <Link to={'posts'} className='item'>Posts</Link>
+                    <Link to={'sectors'} className='item'>Sectors</Link>
+                    <div className="dropdown dropdown-down">
+                        <div tabIndex={0} role="button" className="item font-medium">Insights</div>
+                        <div tabIndex={0} className="dropdown-content mt-5 transform -translate-x-[20%] menu-horizontal bg-[#E8F1FC] py-5 dropdown-container">
+                            <div className='insights-menu mr-40'>
+                                <Link to={'#'} className='insights-menu-item'>Plastic & Polymers</Link>
+                                <Link to={'#'} className='insights-menu-item'>Rubber</Link>
+                                <Link to={'#'} className='insights-menu-item'>Specialty Chemicals</Link>
+                                <Link to={'#'} className='insights-menu-item'>Fine/Basic Chemicals</Link>
+                                <Link to={'#'} className='insights-menu-item'>Food Additives/Emulsifiers</Link>
+                                <Link to={'#'} className='insights-menu-item'>Sugar</Link>
+                                <Link to={'#'} className='insights-menu-item'>Health</Link>
+                                <Link to={'#'} className='insights-menu-item'>Dairy</Link>
+                                <Link to={'#'} className='insights-menu-item'>Cosmetics</Link>
+                                <Link to={'#'} className='insights-menu-item'>Soups & Detergents</Link>
+                                <Link to={'#'} className='insights-menu-item'>Surfactants</Link>
+                                <Link to={'#'} className='insights-menu-item'>Enzyms & Hormones</Link>
+                                <Link to={'#'} className='insights-menu-item'>Paint & Cosatings</Link>
+                            </div>
+                            <div className='insights-menu mr-40'>
+                                <Link to={'#'} className='insights-menu-item'>Flavours & Fragrances</Link>
+                                <Link to={'#'} className='insights-menu-item'>Cleaning & Sanitation</Link>
+                                <Link to={'#'} className='insights-menu-item'>Biocides</Link>
+                                <Link to={'#'} className='insights-menu-item'>Oil & Gas</Link>
+                                <Link to={'#'} className='insights-menu-item'>Petrochemicals</Link>
+                                <Link to={'#'} className='insights-menu-item'>Oleochemicals</Link>
+                                <Link to={'#'} className='insights-menu-item'>Lubricants</Link>
+                                <Link to={'#'} className='insights-menu-item'>Fluids/Fuels</Link>
+                                <Link to={'#'} className='insights-menu-item'>Surface and Coating</Link>
+                                <Link to={'#'} className='insights-menu-item'>Adhesives and Sealants</Link>
+                                <Link to={'#'} className='insights-menu-item'>Eectroplating</Link>
+                                <Link to={'#'} className='insights-menu-item'>Metal Treatment</Link>
+                                <Link to={'#'} className='insights-menu-item'>Construction</Link>
+                            </div>
+                            <div className='insights-menu'>
+                                <Link to={'#'} className='insights-menu-item'>Aerosols</Link>
+                                <Link to={'#'} className='insights-menu-item'>Industrial Gases</Link>
+                                <Link to={'#'} className='insights-menu-item'>Gas Transport</Link>
+                                <Link to={'#'} className='insights-menu-item'>Flavours & Fragrances</Link>
+                                <Link to={'#'} className='insights-menu-item'>Cleaning & Sanitation</Link>
+                                <Link to={'#'} className='insights-menu-item'>Biocides</Link>
+                                <Link to={'#'} className='insights-menu-item'>Oil & Gas</Link>
+                                <Link to={'#'} className='insights-menu-item'>Petrochemicals</Link>
+                                <Link to={'#'} className='insights-menu-item'>Olechemicals</Link>
+                                <Link to={'#'} className='insights-menu-item'>Lubricants</Link>
+                                <Link to={'#'} className='insights-menu-item'>Fluids/Fuels</Link>
+                                <Link to={'#'} className='insights-menu-item'>Surface and coating</Link>
+                                <Link to={'#'} className='insights-menu-item'>Adhesives and Sealants</Link>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <Link to={'product'} className='item'>Product</Link>
+                    <Link to={'events'} className='item'>Events</Link>
+                    <Link to={'equipment'} className='item'>Equipment</Link>
+                    <Link to={'sustainability'} className='item'>Sustainability</Link>
+                    <Link to={'digitalization'} className='item'>Digitalization</Link>
                 </div>
             </header >
 

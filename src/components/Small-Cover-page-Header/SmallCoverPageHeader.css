@@ -28,8 +28,11 @@
 
 .header-search-sm {
     padding: 0px 0px;
-    margin-top: 10px;
-    margin-right: 40px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .header-search-icon-sm {

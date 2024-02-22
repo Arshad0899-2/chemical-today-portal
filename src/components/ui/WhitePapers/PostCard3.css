@@ -16,12 +16,12 @@
     /* Remove bottom space under the image */
 }
 
-.overlay-text {
+/* .overlay-text {
     text-wrap: wrap;
     line-height: 18px;
     font-size: 14px;
     font-weight: bold;
-}
+} */
 
 .overlay-text:hover {
     cursor: pointer;
@@ -38,26 +38,11 @@
     color: #FFF;
 }
 
-.text {
-    background-color: #FF0000;
-    padding: 2px 10px;
-    display: flex;
-    align-items: center;
-    margin: 0px;
-}
-
 /* You might want to add some hover effects for better user interaction */
 .image-container:hover .overlay-text {
     background-color: rgba(0, 0, 0, 0.7);
     /* Darken the overlay on hover */
 }
 
-/* Responsive behavior if needed */
-@media (max-width: 768px) {
-    .overlay-text {
-        font-size: 14px;
-        /* Smaller text on smaller screens */
-    }
-}
 
 

@@ -1,5 +1,4 @@
 import './App.css'
-import Footer from './components/footer/Footer'
 import PostInsider from './pages/Post Insider/PostInsider'
 import PostPage from './pages/Post/PostPage'
 import CoverPage from './pages/CoverPage/CoverPage'
@@ -11,13 +10,12 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import { createElement, useEffect, useState } from 'react'
 import { Editorial } from './pages/Editorial/Editorial'
 import { SmallCoverPageHeader } from './components/Small-Cover-page-Header/SmallCoverPageHeader'
-import Drawer from './components/Drawer/Drawer'
 
 function App() {
   
   const [showHeader, setShowHeader] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const breakpoint = 1200;
+  const breakpoint = 1000;
 
   useEffect(() => {
       const handleResize = () => {
