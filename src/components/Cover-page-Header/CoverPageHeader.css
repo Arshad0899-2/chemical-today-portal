@@ -229,9 +229,7 @@
 
 }
 
-/* 1185 need to work */
-
-@media screen and (min-width: 1185px) and (max-width: 1340px) {
+@media screen and (min-width: 1001px) and (max-width: 1340px) {
 
     .header {
         background-color: black;

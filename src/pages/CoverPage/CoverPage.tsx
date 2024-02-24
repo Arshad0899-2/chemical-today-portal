@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import './CoverPage.css';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import posts from '../../utils/posts';
@@ -8,17 +7,10 @@ import greyImg from '../../assets/home-page-assets/grayTempImg.svg';
 import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 import blankImg from "../../assets/home-page-assets/Post-assets/blank_img.svg";
 import editorsChoice from "../../assets/home-page-assets/editors-choice.png";
-import CoverPageHeader from '../../components/Cover-page-Header/CoverPageHeader';
-import { SmallCoverPageHeader } from '../../components/Small-Cover-page-Header/SmallCoverPageHeader';
-import Drawer from '../../components/Drawer/Drawer';
 
-interface IBodyProps {
-    toggleDrawer: () => void;
-  }
-  
 
-const CoverPage: React.FC<IBodyProps> = ({ toggleDrawer }) => {
-    
+const CoverPage: React.FC = () => {
+
     const postDetails = posts;
     const singlePost = {
         id: 1,
@@ -58,7 +50,7 @@ const CoverPage: React.FC<IBodyProps> = ({ toggleDrawer }) => {
                                 <div>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
                             </div>
                         </div>
-                        <div>
+                        <div className='editors-choice'>
                             <div className='latest-stores'>
                                 Editors Choice
                             </div>
@@ -145,8 +137,8 @@ const CoverPage: React.FC<IBodyProps> = ({ toggleDrawer }) => {
                             <button className='insights-btn'>Read More</button>
                         </div >
                     </div>
-                        <div className='insights-ads'>
-                        </div>
+                    <div className='insights-ads'>
+                    </div>
 
                 </div>
 
