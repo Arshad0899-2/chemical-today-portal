@@ -59,3 +59,13 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 768px) {
+
+    
+.header-search-sm > label {
+
+    width: 250px;
+}
+    
+}

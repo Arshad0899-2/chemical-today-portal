@@ -17,17 +17,17 @@ const Drawer: React.FC<HeaderProps> = ({ headerHeight, onOverlayClicked }) => {
     <>
       <div className={`drawer open`} style={headerStyles}>
         <div className="drawer-content">
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>Arshad</Link>
-          <Link to='#'>snehu </Link>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>
+          <button className="btn btn-wide">Wide</button>          
         </div>
         <div className="drawer-overlay" onClick={onOverlayClicked}></div>
       </div>

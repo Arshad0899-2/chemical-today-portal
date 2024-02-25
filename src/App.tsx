@@ -9,7 +9,7 @@ import Events from './pages/Events/Events'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { createElement, useEffect, useState } from 'react'
 import { Editorial } from './pages/Editorial/Editorial'
-import { Header } from './components/Small-Cover-page-Header/Header'
+import { Header } from './components/Header/Header'
 
 function App() {
   

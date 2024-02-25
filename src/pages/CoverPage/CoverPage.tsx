@@ -50,9 +50,9 @@ const CoverPage: React.FC = () => {
                             </div>
                             <div className='latest-text'>
                                 <div>orem Ipsum is simply dummy text of etting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
-                                <div>orem Ipsum is simply sum has been the industry’s standard dummy text ever since</div>
-                                <div>rem Ipsum has been the industry’s standard dummy text ever since</div>
-                                <div>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
+                                <div>orem Ipsum is simply dummy text of etting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
+                                <div>orem Ipsum is simply dummy text of etting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
+                                <div>orem Ipsum is simply dummy text of etting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
                             </div>
                         </div>
                         <div className='editors-choice'>
