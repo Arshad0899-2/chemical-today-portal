@@ -35,8 +35,13 @@ const CoverPage: React.FC = () => {
 
                 <div className='cover-container'>
                     <div className='cover-item'>
-                        <img src={blankImg} className='cover-item-img' />
-                        <h3 className='cover-item-text'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</h3>
+                        <div>
+                            <img src={blankImg} className='cover-item-img' />
+                            <h3 className='cover-item-text'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</h3>
+                        </div>
+                        <div className='w-3 h-5 sneha'>
+
+                        </div>
                     </div>
                     <div className='cover-details'>
                         <div className='cover-details-latest'>
@@ -44,9 +49,9 @@ const CoverPage: React.FC = () => {
                                 Latest stories
                             </div>
                             <div className='latest-text'>
-                                <div>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
-                                <div>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
-                                <div>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
+                                <div>orem Ipsum is simply dummy text of etting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
+                                <div>orem Ipsum is simply sum has been the industry’s standard dummy text ever since</div>
+                                <div>rem Ipsum has been the industry’s standard dummy text ever since</div>
                                 <div>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
                             </div>
                         </div>

@@ -129,6 +129,7 @@
         color: #000;
         text-wrap: nowrap;
         line-height: 2rem;
+        font-size: 1rem;
     }
 
     .text-info {
@@ -266,7 +267,7 @@
         padding: 0px 14px;
         display: flex;
         margin: 10px 10px 0px;
-        font-size: 1.05rem;
+        font-size: 1rem;
         justify-content: center;
         align-items: center;
     }
@@ -340,7 +341,8 @@
     .insights-menu-item {
         color: #000;
         text-wrap: nowrap;
-        line-height: 1.7rem;
+        line-height: 1.9rem;
+        font-size: 0.95rem;
     }
 
 }

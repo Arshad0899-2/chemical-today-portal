@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    gap: 10px;
 }
 
 .header-search-icon-sm {
@@ -40,3 +41,21 @@
     height: 32px;
 }
 
+.download-btn {
+    font-size: 14px;
+    min-height: 37px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: black;
+    color: #FFF;
+    border-radius: 7px
+}
+
+.download-btn:hover {
+    background-color: #68666687;
+}
+
+.dialog-cls-btn {
+    display: flex;
+    justify-content: flex-end;
+}

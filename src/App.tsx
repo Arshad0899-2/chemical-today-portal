@@ -9,7 +9,7 @@ import Events from './pages/Events/Events'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { createElement, useEffect, useState } from 'react'
 import { Editorial } from './pages/Editorial/Editorial'
-import { SmallCoverPageHeader } from './components/Small-Cover-page-Header/SmallCoverPageHeader'
+import { Header } from './components/Small-Cover-page-Header/Header'
 
 function App() {
   
@@ -53,16 +53,16 @@ function App() {
   return (
     <>
         <HeaderVisibilityController />
-        { showHeader == true ? <SmallCoverPageHeader toggleDrawer={toggleDrawer} /> : <CoverPageHeader /> }
+        { showHeader == true ? <Header toggleDrawer={toggleDrawer} /> : <CoverPageHeader /> }
         <div className='main-body-container'>
           <Routes >
-            <Route path='/' element={createElement(CoverPage, { toggleDrawer })} />
+            <Route path='/' element={createElement(CoverPage)} />
             <Route path='/posts' Component={PostPage} />
             <Route path='/spotlight' Component={SustainPage} />
             <Route path='/events' Component={Events} />
             <Route path='/post-insider' Component={PostInsider} />
             <Route path='/sustainability' Component={SustainPage} />*
-            <Route path='/digitalization' element={createElement(CoverPage, { toggleDrawer })} />
+            <Route path='/digitalization' element={createElement(CoverPage)} />
             <Route path='/product' Component={ProductInsider} />
             <Route path='/editorial' Component={Editorial} />
           </Routes>
