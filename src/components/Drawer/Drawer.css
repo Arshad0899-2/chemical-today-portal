@@ -1,38 +1,49 @@
 .drawer {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 2; 
-  }
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
 
-  .drawer.open {
-    width: 100%;
-    display: flex;
-    height: calc(100% - var(--dynamicHeaderHeaight));
-  }
-  
-  .drawer-overlay {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.2); 
-    z-index: -1;
-  }
-  
-  .drawer-content {
-    background-color: #fffffff7;
-    height: 100%;
-    overflow: auto;
-    width: 18%;
-    display: flex;
-    padding: 15px 10px;
-    flex-direction: column;
-  }
+.drawer.open {
+  width: 100%;
+  display: flex;
+  height: calc(100% - var(--dynamicHeaderHeaight));
+}
 
-  .drawer-content > * {
-    width: 90%;
-    margin: 5px auto;
+.drawer-overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
 
-  }
-  
-  ::-webkit-scrollbar {
-    display: none; /* Adjust the width as needed */
+.drawer-content>a {
+  color: white;
+  padding: 8px 0px 8px 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.drawer-content>a:hover {
+  color: black;
+  cursor: pointer;
+  padding-left: 10px;
+  background-color: tomato;
+}
+
+.drawer-content {
+  background-color: #000;
+  height: 100%;
+  overflow: auto;
+  width: 20%;
+  min-width: 250px;
+  display: flex;
+  padding: 15px 10px 10px 15px;
+  flex-direction: column;
+  box-shadow: inset 10px 20px 30px -15px rgba(96, 96, 96, 0.5);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

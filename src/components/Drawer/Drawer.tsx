@@ -10,24 +10,21 @@ interface HeaderProps {
 const Drawer: React.FC<HeaderProps> = ({ headerHeight, onOverlayClicked }) => {
 
   const headerStyles = {
-    height: `calc(100% - ${headerHeight}px)`
+    height: `calc(100% - ${headerHeight}px)`,
   };
 
   return (
     <>
       <div className={`drawer open`} style={headerStyles}>
         <div className="drawer-content">
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>
-          <button className="btn btn-wide">Wide</button>          
+          <a>Post</a>
+          <a>Sector</a>
+          <a>Insights</a>        
+          <a>Product</a>
+          <a>Events</a>
+          <a>Equipment</a>
+          <a>Sustainability</a>
+          <a>Digitalization</a>
         </div>
         <div className="drawer-overlay" onClick={onOverlayClicked}></div>
       </div>
