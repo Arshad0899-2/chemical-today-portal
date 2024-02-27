@@ -16,15 +16,17 @@ const Drawer: React.FC<HeaderProps> = ({ headerHeight, onOverlayClicked }) => {
   return (
     <>
       <div className={`drawer open`} style={headerStyles}>
-        <div className="drawer-content">
-          <a>Post</a>
-          <a>Sector</a>
-          <a>Insights</a>        
-          <a>Product</a>
-          <a>Events</a>
-          <a>Equipment</a>
-          <a>Sustainability</a>
-          <a>Digitalization</a>
+        <div>
+          <div className="drawer-content">
+            <Link to={'/posts'} onClick={onOverlayClicked}>Posts</Link>
+            <Link to={'/sector'} onClick={onOverlayClicked}>Sector</Link>
+            <Link to={'/insights'} onClick={onOverlayClicked}>Insights</Link>        
+            <Link to={'/product'} onClick={onOverlayClicked}>Product</Link>
+            <Link to={'/events'} onClick={onOverlayClicked}>Events</Link>
+            <Link to={'/equipment'} onClick={onOverlayClicked}>Equipment</Link>
+            <Link to={'/sustainability'} onClick={onOverlayClicked}>Sustainability</Link>
+            <Link to={'/digitalization'} onClick={onOverlayClicked}>Digitalization</Link>
+          </div>
         </div>
         <div className="drawer-overlay" onClick={onOverlayClicked}></div>
       </div>
