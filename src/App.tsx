@@ -1,5 +1,5 @@
 import './App.css'
-import PostInsider from './pages/Post Insider/PostInsider'
+import PostInsider from './pages/PostInsider/PostInsider'
 import PostPage from './pages/Post/PostPage'
 import CoverPage from './pages/CoverPage/CoverPage'
 import CoverPageHeader from './components/Cover-page-Header/CoverPageHeader'
