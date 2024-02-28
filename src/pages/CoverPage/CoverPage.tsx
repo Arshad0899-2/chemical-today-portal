@@ -20,10 +20,9 @@ const CoverPage: React.FC = () => {
     };
 
     const sidePostStyle: React.CSSProperties = {
-        width: 'auto',
         display: 'flex',
         flexDirection: 'column',
-        flex: '0 1 calc(33.333% - 10px)',
+        // flex: '0 1 calc(33.333% - 10px)',
         marginRight: '15px',
         marginBottom: '10px',
     }
@@ -166,6 +165,7 @@ const CoverPage: React.FC = () => {
                                     {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
                                     <p className='overlay-text spotlight-desc'>{singlePost.description}</p>
                                 </div >
+                                <div className='spotlight-body-ads mb-5'></div>
 
                             </div>
                             <div className='spotlight-body-manage'>

@@ -284,8 +284,7 @@
 
 .spotlight-body-post {
     height: auto;
-    padding-top: 25px;
-    width: 35%;
+    width: 55%;
 }
 
 .management-title {
@@ -310,17 +309,18 @@
 
 .management-item > h6 {
     margin: 0px;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .management-item > p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 0px;
 }
 
 .spotlight-body-manage {
     height: auto;
-    width: 45%;
+    width: 43%;
 }
 
 .spotlight, .equipment, .event, .sustain, .cover-post  {
@@ -334,11 +334,18 @@
     background-image: url('../../assets/home-page-assets/squareGray.svg');
 }
 
+.spotlight-body-ads-1 {
+    height: auto;
+    margin-bottom: 15px;
+    width: 23%;
+    background-image: url('../../assets/home-page-assets/squareGray.svg');
+}
+
 .spotlight-container {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
-    gap: 20px;
+    gap: 2%;
     flex-wrap: wrap;
 }
 
@@ -369,6 +376,10 @@
     font-weight: bold;
     padding: 10px 20px;
     margin-bottom: 20px;
+}
+
+.postStyle {
+    width: auto;
 }
 
 .insights-btn:hover {
@@ -455,7 +466,7 @@
     }
 
     .latest-text > div {
-        font-size: 15px;
+        /* font-size: 15px; */
         padding: 5px 0px 10px;
         line-height: 22px;
         font-weight: 400;
@@ -481,10 +492,12 @@
     
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1340px) {
 
     .spotlight-body-post {
-        width: 75%;
+        width: 100%;
+        display: flex;
+        gap: 3%;
     }
 
     .spotlight-body-manage {
@@ -494,6 +507,37 @@
 
     .spotlight-container {
         gap: 3%
+    }
+
+    .postStyle {
+        width: 75%;
+    }
+
+    .spotlight-desc {
+        font-size: 19px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .spotlight-body-ads {
+        display: none;
+    }
+
+    .postStyle {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .spotlight-body-manage {
+        height: auto;
+        width: 100%;
+    }
+
+    .spotlight-body-post {
+        width: 100%;
     }
 
 }

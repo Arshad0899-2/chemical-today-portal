@@ -1922,6 +1922,14 @@ input.tab:checked + .tab-content,
   margin-top: 1.25rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1968,6 +1976,10 @@ input.tab:checked + .tab-content,
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .flex-none {
