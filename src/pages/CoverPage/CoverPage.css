@@ -116,7 +116,8 @@
 .cover-post-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    /* flex-grow: 1; */
+    gap: 35px;
 }
 
 .cover-post-heading {

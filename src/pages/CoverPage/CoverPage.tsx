@@ -217,9 +217,9 @@ const CoverPage: React.FC = () => {
                     <div className='cover-post-items'>
                         <Post
                             redirectTo="/target-path/"
-                            widthInPx="420px"
+                            widthInPx="300px"
                             posts={postDetails}
-                            isActive={true}
+                            isActive={false}
                         />
                     </div>
                 </div>
@@ -337,7 +337,7 @@ const CoverPage: React.FC = () => {
                             redirectTo="/target-path/"
                             widthInPx="420px"
                             posts={postDetails}
-                            isActive={true}
+                            isActive={false}
                         />
                     </div>
                 </div>
