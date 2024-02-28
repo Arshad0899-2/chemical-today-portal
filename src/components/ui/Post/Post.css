@@ -41,7 +41,8 @@
     line-height: 18px;
     font-size: 1rem;
     padding-top: 1rem;
-    font-weight: bold;
+    font-weight: 540;
+    margin-bottom: 10px;
 }
 
 .overlay-text:hover {

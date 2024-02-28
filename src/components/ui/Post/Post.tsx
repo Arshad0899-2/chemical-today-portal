@@ -22,8 +22,9 @@ const Post: React.FC<PostProps> = ({
         width: widthInPx,
         display: 'flex',
         flexDirection: 'column',
-        flex: '0 1 calc(33.333% - 10px)',
+        // flex: '0 1 calc(33.333% - 10px)',
         marginBottom: '10px',
+        flexGrow: 1
    }
 
     const sidePostStyle: React.CSSProperties = {
@@ -33,6 +34,8 @@ const Post: React.FC<PostProps> = ({
         flex: '0 1 calc(50% - 10px)',
         // marginRight: '15px',
         marginBottom: '10px',
+        flexGrow: 1
+
     }
 
     const postDetails = posts;

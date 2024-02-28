@@ -116,7 +116,7 @@
 .cover-post-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
 .cover-post-heading {
@@ -139,7 +139,10 @@
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
+    height: 20px;
+    width: 80px;
+    align-items: self-start;
 }
 
 .cover-sustainability-body {
@@ -276,6 +279,7 @@
     width: 100%;
     background-image: url('../../assets/home-page-assets/largeAds.svg');
     height: 200px;
+    margin-top: 10px;
 }
 
 .spotlight-body-post {
@@ -300,9 +304,9 @@
     width: 100%;
 }
 
-.management-item > img {
+/* .management-item > img {
     width: 300px;
-}
+} */
 
 .management-item > h6 {
     margin: 0px;
@@ -326,7 +330,7 @@
 
 .spotlight-body-ads {
     height: auto;
-    width: 17%;
+    width: 22%;
     background-image: url('../../assets/home-page-assets/squareGray.svg');
 }
 
@@ -464,8 +468,9 @@
         /* gap: 18px; */
     }
     
-    .sneha {
+    .tab-ads-cont {
         width: 50%;
+        height: auto;
         background-color: rgb(59 130 246 / 0.5);
     }
 
@@ -474,4 +479,21 @@
         height: 130px;
     }
     
+}
+
+@media screen and (max-width: 1030px) {
+
+    .spotlight-body-post {
+        width: 75%;
+    }
+
+    .spotlight-body-manage {
+        height: auto;
+        width: 75%;
+    }
+
+    .spotlight-container {
+        gap: 3%
+    }
+
 }

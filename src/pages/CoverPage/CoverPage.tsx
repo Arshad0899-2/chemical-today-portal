@@ -39,7 +39,7 @@ const CoverPage: React.FC = () => {
                             <img src={blankImg} className='cover-item-img' />
                             <h3 className='cover-item-text'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</h3>
                         </div>
-                        <div className='w-3 h-5 sneha'>
+                        <div className='w-3 h-5 tab-ads-cont'>
 
                         </div>
                     </div>
@@ -87,9 +87,9 @@ const CoverPage: React.FC = () => {
 
                         <Post
                             redirectTo="/target-path/"
-                            widthInPx="420px"
+                            widthInPx="370px"
                             posts={postDetails}
-                            isActive={true}
+                            isActive={false}
                         />
                     </div>
                     <div className='spotlight-ads'>
