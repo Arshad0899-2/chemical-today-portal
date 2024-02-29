@@ -4,7 +4,6 @@ import mainBannerImage from "../../assets/header-assets/mainBannerImage.png";
 import PostCard3 from '../../components/ui/WhitePapers/PostCard3';
 // import whites from '../../utils/whites';
 import Rect2Img from '../../assets/WhitePaper/Rectangle 36.svg'
-import Footer from '../../components/footer/Footer';
 import Post from '../../components/ui/Post/Post';
 import sideBarAds from '../../assets/home-page-assets/Post-assets/balnk_ads.svg'
 import posts from '../../utils/posts';
