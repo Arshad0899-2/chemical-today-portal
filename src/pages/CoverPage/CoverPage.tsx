@@ -3,10 +3,9 @@ import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import posts from '../../utils/posts';
 import Post from '../../components/ui/Post/Post';
 import viewMore from '../../assets/home-page-assets/view-more.svg';
-import greyImg from '../../assets/home-page-assets/grayTempImg.svg';
-import blueAds from "../../assets/home-page-assets/Post-assets/balnk_ads.svg";
 import blankImg from "../../assets/home-page-assets/Post-assets/blank_img.svg";
 import editorsChoice from "../../assets/home-page-assets/editors-choice.png";
+import sample from "../../assets/home-page-assets/Post-assets/sample_img.png";
 
 
 const CoverPage: React.FC = () => {
@@ -69,6 +68,9 @@ const CoverPage: React.FC = () => {
                                     <div></div>
                                     <div></div>
                                 </div>
+                                <div className='w-3 h-5 tab-ads-cont tab-ads-cont-2'>
+
+                                </div>
                             </div>
 
                         </div>
@@ -110,7 +112,7 @@ const CoverPage: React.FC = () => {
                                 <p className='text'>Repots</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
-                            <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className='overlay-text insights-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <button className='insights-btn'>Read More</button>
                         </div >
                         < div className='insights-items'>
@@ -119,7 +121,7 @@ const CoverPage: React.FC = () => {
                                 <p className='text'>Case Studies</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
-                            <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className='overlay-text insights-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <button className='insights-btn'>Read More</button>
                         </div >
                         < div className='insights-items'>
@@ -128,7 +130,7 @@ const CoverPage: React.FC = () => {
                                 <p className='text'>White Paper</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
-                            <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className='overlay-text insights-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <button className='insights-btn'>Read More</button>
                         </div >
                         < div className='insights-items'>
@@ -137,7 +139,7 @@ const CoverPage: React.FC = () => {
                                 <p className='text'>Repots</p>
                             </div>
                             {/* <Link to={redirectTo} className='overlay-text'>{post.description}</Link> */}
-                            <p className='overlay-text spotlight-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className='overlay-text insights-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <button className='insights-btn'>Read More</button>
                         </div >
                     </div>
@@ -222,6 +224,9 @@ const CoverPage: React.FC = () => {
                             isActive={false}
                         />
                     </div>
+                    <div className='sustain-ads'>
+                        {/* <img src={blueAds} className='sustain-ads-img' /> */}
+                    </div>
                 </div>
 
                 <div className='equipment'>
@@ -232,16 +237,6 @@ const CoverPage: React.FC = () => {
                         </a>
                     </div>
                     <div className='euip-items'>
-                        <div className='euip-item'>
-                            <div className='equip-img'></div>
-                            <div className='equip-title'>Equipment Name</div>
-                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                        </div>
-                        <div className='euip-item'>
-                            <div className='equip-img'></div>
-                            <div className='equip-title'>Equipment Name</div>
-                            <div className='equip-desc'>orem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                        </div>
                         <div className='euip-item'>
                             <div className='equip-img'></div>
                             <div className='equip-title'>Equipment Name</div>
@@ -276,21 +271,36 @@ const CoverPage: React.FC = () => {
                     </div>
                     <div className='cover-event-body'>
                         <div className='cover-event-body-img'>
-                            <div className='event-img'>
-                                <button className='event-img-btn'>New Industry</button>
+                            <div className="card event-card shadow-xl image-full">
+                                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                                <div className="card-body event-card-container">
+                                    <button className='event-img-btn'>New Industry</button>
+                                </div>
                             </div>
-                            <div className='event-img'>
-                                <button className='event-img-btn'>New Industry</button>
+                            <div className="card event-card shadow-xl image-full">
+                                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                                <div className="card-body event-card-container">
+                                    <button className='event-img-btn'>New Industry</button>
+                                </div>
                             </div>
-                            <div className='event-img'>
-                                <button className='event-img-btn'>New Industry</button>
+                            <div className="card event-card shadow-xl image-full">
+                                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                                <div className="card-body event-card-container">
+                                    <button className='event-img-btn'>New Industry</button>
+                                </div>
                             </div>
-                            <div className='event-img'>
-                                <button className='event-img-btn'>New Industry</button>
+                            <div className="card event-card shadow-xl image-full">
+                                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                                <div className="card-body event-card-container">
+                                    <button className='event-img-btn'>New Industry</button>
+                                </div>
                             </div>
                         </div>
                         <div className='event-ads'>
                         </div>
+                    </div>
+                    <div className='sustain-ads event-ads-2'>
+                        {/* <img src={blueAds} className='sustain-ads-img' /> */}
                     </div>
                 </div>
 
@@ -302,24 +312,39 @@ const CoverPage: React.FC = () => {
                         </a>
                     </div>
                     <div className='cover-sustainability-body'>
-                        <a className='sustain-img-body'>
-                            <img src={greyImg} className='sustain-img' />
-                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
-                        </a>
-                        <a className='sustain-img-body'>
-                            <img src={greyImg} className='sustain-img' />
-                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
-                        </a>
-                        <a className='sustain-img-body'>
-                            <img src={greyImg} className='sustain-img' />
-                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
-                        </a>
-                        <a className='sustain-img-body'>
-                            <img src={greyImg} className='sustain-img' />
-                            <p className='sustain-caption'>orem Ipsum is simply dummy text of the printing</p>
-                        </a>
+
+                        <div className='cover-sustain-container'>
+                            <div className="card card-box shadow-xl image-full">
+                                <figure><img src={sample} alt="dummy" /></figure>
+                                <div className="card-body">
+                                    <p className='card-desc'>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
+                            </div>
+
+                            <div className="card card-box shadow-xl image-full">
+                                <figure><img src={sample} alt="dummy" /></figure>
+                                <div className="card-body">
+                                    <p className='card-desc'>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
+                            </div>
+
+                            <div className="card card-box shadow-xl image-full">
+                                <figure><img src={sample} alt="dummy" /></figure>
+                                <div className="card-body">
+                                    <p className='card-desc'>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
+                            </div>
+
+                            <div className="card card-box shadow-xl image-full">
+                                <figure><img src={sample} alt="dummy" /></figure>
+                                <div className="card-body">
+                                    <p className='card-desc'>If a dog chews shoes whose shoes does he choose?</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='sustain-ads'>
-                            <img src={blueAds} className='sustain-ads-img' />
+                            {/* <img src={blueAds} className='sustain-ads-img' /> */}
                         </div>
                     </div>
 
