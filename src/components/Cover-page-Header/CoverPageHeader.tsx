@@ -46,10 +46,9 @@ const CoverPageHeader: React.FC = () => {
 
                 <div className='navigation'>
                     <Link to={'posts'} className='item'>Posts</Link>
-                    <Link to={'sectors'} className='item'>Sectors</Link>
                     <div className="dropdown dropdown-down">
-                        <div tabIndex={0} role="button" className="item font-medium">Insights</div>
-                        <div tabIndex={0} className="dropdown-content mt-5 transform -translate-x-[20%] menu-horizontal bg-[#E8F1FC] py-5 dropdown-container">
+                        <div tabIndex={0} role="button" className="item font-medium">Sectors</div>
+                        <div tabIndex={0} className="dropdown-content mt-5 transform -translate-x-[9%] menu-horizontal bg-[#E8F1FC] py-5 dropdown-container">
                             <div className='insights-menu mr-40'>
                                 <Link to={'#'} className='insights-menu-item'>Plastic & Polymers</Link>
                                 <Link to={'#'} className='insights-menu-item'>Rubber</Link>
@@ -99,7 +98,9 @@ const CoverPageHeader: React.FC = () => {
 
 
                     </div>
-                    <Link to={'product'} className='item'>Product</Link>
+                    <Link to={'#'} className='item'>Insights</Link>
+                    <Link to={'spotlight'} className='item'>Spotlight</Link>
+                    <Link to={'#'} className='item'>Product</Link>
                     <Link to={'events'} className='item'>Events</Link>
                     <Link to={'equipment'} className='item'>Equipment</Link>
                     <Link to={'sustainability'} className='item'>Sustainability</Link>

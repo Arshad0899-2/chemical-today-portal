@@ -19,9 +19,9 @@ const Drawer: React.FC<HeaderProps> = ({ headerHeight, onOverlayClicked }) => {
         <div>
           <div className="drawer-content">
             <Link to={'/posts'} onClick={onOverlayClicked}>Posts</Link>
-            <Link to={'/sector'} onClick={onOverlayClicked}>Sector</Link>
-            <Link to={'/insights'} onClick={onOverlayClicked}>Insights</Link>        
-            <Link to={'/product'} onClick={onOverlayClicked}>Product</Link>
+            <Link to={'#'} onClick={onOverlayClicked}>Sector</Link>
+            <Link to={'#'} onClick={onOverlayClicked}>Insights</Link>        
+            <Link to={'#'} onClick={onOverlayClicked}>Product</Link>
             <Link to={'/events'} onClick={onOverlayClicked}>Events</Link>
             <Link to={'/equipment'} onClick={onOverlayClicked}>Equipment</Link>
             <Link to={'/sustainability'} onClick={onOverlayClicked}>Sustainability</Link>

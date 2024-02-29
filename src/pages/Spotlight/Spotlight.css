@@ -1,0 +1,174 @@
+.spotlight-page-body {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+}
+
+.spotlight-page-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.spotlight-page-details {
+    height: 100%;
+    width: 80%;
+    padding-right: 50px;
+    margin-right: 5px;
+}
+
+.spotlightPageviewMoreImg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 15px;
+    margin-right: 840px;
+    transform: scale(0.7);
+}
+
+.spotlightPageviewMoreImg:hover {
+    cursor: pointer;
+}
+
+
+
+.spotlightPagesidebar-ads {
+    margin-top: 70px;
+    width: 25%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.spotlightPagelatest-updates {
+    border: 1px solid rgb(248, 242, 242);
+    margin: 20px 0px;
+    padding: 8px 15px;
+    width: max-content;
+    background-color:  #e5210b;
+    color: #f9f9f9;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.spotlightPageupdates {
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    /* border-bottom: 1px solid rgb(72, 71, 71); */
+}
+
+.spotlightPagelast-update {
+    border-bottom: none;
+}
+
+.spotlight-page-ads {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.spotlight-page-ad-div {
+    background-image: url('../../assets/home-page-assets/Post-assets/balnk_ads.svg');
+    width: 100%;
+    height: 250px;
+}
+
+.spotlightPageupdates > a {
+    color: #000;
+}
+
+.spotlightPageupdates > a:hover {
+    color: #000;
+    opacity: 0.7;
+}
+
+.spotlightPage {
+    margin-bottom: 40px;
+   
+        margin: auto;
+        width: 90%;
+   
+}
+
+.spotlight-page-heading {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlight-page-heading-text {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 45px;
+    width: max-content;
+    margin-bottom: 0px;
+}
+
+.spotlightPageeditor-choice {
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+    
+}
+
+
+
+
+.spotlightPageeditor-choice-container {
+    display: flex;
+    flex-direction: row;
+    /* gap: 40px; */
+    width: 90%;
+}
+
+.spotlightPageeditor-choice-img {
+    flex: 1;
+    position: relative;
+}
+
+.spotlightPageeditor-choice-img > a > img {
+    width: 1000px; /* Adjust width to fit container */
+    max-width: 897px; /* Set maximum width if necessary */
+    margin-top: 40px;
+    margin-left: 67px;
+}
+
+.spotlightPageeditor-choice-img-side {
+    flex: 1;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.spotlightPageeditor-choice-img-side > div {
+    height: 400px; /* Adjust height to fit container */
+    width: 350px;
+    background-image: url('../../assets//home-page-assets//Post-assets/blank_img.svg');
+    background-size: cover; /* Ensure the background image covers the div */
+    
+}
+.spotlightPageview-more-btn {
+    position: absolute;
+    bottom: 36px; /* Adjust vertical position as needed */
+    left: 783px; /* Adjust horizontal position as needed */
+    padding: 10px 20px;
+    background-color: #bf2214;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.spotlightPageview-more-btn:hover {
+    background-color: #f4a994;
+}
+
+

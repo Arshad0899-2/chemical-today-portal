@@ -5,10 +5,14 @@ import CoverPage from './pages/CoverPage/CoverPage'
 import CoverPageHeader from './components/Cover-page-Header/CoverPageHeader'
 import ProductInsider from './pages/ProductInsider/ProductInsider'
 import SustainPage from './pages/SustainPage/SustainPage'
+import Editorial from './pages/Editorial/Editorial'
 import Events from './pages/Events/Events'
+import SectorInsider from './pages/SectorInsider/SectorInsider'
+import Spotlight from './pages/Spotlight/Spotlight'
+import DigitPage from './pages/DigitPage/DigitPage'
+import Equipment from './pages/Equipment/Equipment'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { createElement, useEffect, useState } from 'react'
-import { Editorial } from './pages/Editorial/Editorial'
 import { Header } from './components/Header/Header'
 
 function App() {
@@ -58,13 +62,15 @@ function App() {
           <Routes >
             <Route path='/' element={createElement(CoverPage)} />
             <Route path='/posts' Component={PostPage} />
-            <Route path='/spotlight' Component={SustainPage} />
+            <Route path='/spotlight' Component={Spotlight} />
             <Route path='/events' Component={Events} />
             <Route path='/post-insider' Component={PostInsider} />
             <Route path='/sustainability' Component={SustainPage} />*
-            <Route path='/digitalization' element={createElement(CoverPage)} />
+            <Route path='/digitalization' Component={DigitPage} />
             <Route path='/product' Component={ProductInsider} />
             <Route path='/editorial' Component={Editorial} />
+            <Route path='/sectors' Component={SectorInsider} />
+            <Route path='/equipment' Component={Equipment} />
           </Routes>
         </div>
 
