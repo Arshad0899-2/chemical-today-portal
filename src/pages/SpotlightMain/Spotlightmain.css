@@ -1,0 +1,252 @@
+.horizontal-ads {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.horizontal-ads img {
+    height: auto;
+    max-height: 120px;
+    margin-left: 20px; /* Adjust the left margin */
+    margin-right: 20px; /* Adjust the right margin */
+}
+
+
+
+.mainBanner {
+    width: 100%;
+    max-width: 2200px;
+    object-fit: fill;
+}
+
+.mainBanner-image {
+    width: 100%;
+    height: 400px;
+}
+
+
+.container {
+    position: relative;
+}
+
+.horizontal-ads remains unchanged */
+
+.spotlightmain-type-text {
+    background-color: #161212;
+    color: #f6eded;
+    height: 35px;
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+
+.spotlightmainApp {
+    margin-top: 40px;
+    margin-left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.spotlightmain-heading {
+    text-align: center;
+}
+
+
+
+
+.spotlightmain-body {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: center; /* Center align flex items horizontally */
+    gap: 20px; /* Gap between post cards */
+    width: 50%; /* Adjusted width */
+    margin: auto;
+}
+
+.spotlightmain-card {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust width to fit three cards in a row with gap */
+    max-width: calc(33.33% - 20px); /* Adjust maximum width */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.spotlightmain-card img {
+    width: 100%; /* Make sure the image fills the post card */
+}
+
+
+.spotlightmainimage-container {
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align images horizontally */
+    
+}
+
+
+
+.spotlightmainimage {
+    width: calc(25% - 50px); /* Adjust width of each image */
+    /* For example, with 4 images per row, each image takes 25% of the container width */
+    /* Subtracting gap width to avoid overflow */
+    max-width: calc(25% - 50px); /* Ensure images don't exceed 25% of container width */
+    margin: 8px; /* Adjust margin to create space between images */
+    background-color: #706cad; /* Change the background color of the rectangles */
+    /* Add more styling as needed */
+}  
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .spotlightmainimage {
+        width: calc(50% - 50px); /* Adjust width for two images per row */
+        max-width: calc(50% - 50px); /* Ensure images don't exceed 50% of container width */
+        
+    }
+}
+
+
+.spotlightmainApp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+.spotlightmain-body {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.spotlightmainside-bar-ad {
+    width: 300px;
+}
+
+.spotlightmain-ads-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.spotlightmaineditor-choice {
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+}
+
+
+
+
+.spotlightmaineditor-choice-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.spotlightmaineditor-choice-img {
+    flex: 1;
+    position: relative;
+}
+
+.spotlightmaineditor-choice-img > a > img {
+    width: 1000px; /* Adjust width to fit container */
+    max-width: 800px; /* Set maximum width if necessary */
+    margin-top: 40px;
+    margin-left: 170px;
+}
+
+.spotlightmaineditor-choice-img-side {
+    flex: 1;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.spotlightmaineditor-choice-img-side > div {
+    height: 360px; /* Adjust height to fit container */
+    width: 290px;
+    background-image: url('../../assets//home-page-assets//Post-assets/blank_img.svg');
+    background-size: cover; /* Ensure the background image covers the div */
+    
+}
+.spotlightmainview-more-btn {
+    position: absolute;
+    bottom: 35px; /* Adjust vertical position as needed */
+    left: 805px; /* Adjust horizontal position as needed */
+    padding: 10px 20px;
+    background-color: #bf2214;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.spotlightmainview-more-btn:hover {
+    background-color: #f4a994;
+}
+
+.spotlightmain {
+    margin-bottom: 40px;
+   
+        margin: auto;
+        width: 80%;
+   
+}
+
+.spotlightmain-heading {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlightmain-heading-text {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 45px;
+    width: max-content;
+    margin-bottom: 0px;
+}
+
+.postsApp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+
+.posts-body {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.postside-bar-ad {
+    width: 300px;
+}
+
+.posts-ads-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

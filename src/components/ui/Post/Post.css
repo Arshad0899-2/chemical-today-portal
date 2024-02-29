@@ -39,8 +39,10 @@
 .overlay-text {
     text-wrap: wrap;
     line-height: 18px;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 540;
+    margin-bottom: 10px;
 }
 
 .overlay-text:hover {
@@ -73,9 +75,23 @@
 }
 
 /* Responsive behavior if needed */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+    
     .overlay-text {
-        font-size: 14px;
-        /* Smaller text on smaller screens */
+        text-wrap: wrap;
+        line-height: 15px;
+        font-size: 0.7rem;
+        padding-top: 1rem;
+        font-weight: bold;
     }
+
+    .text {
+        background-color: #FF0000;
+        padding: 2px 10px;
+        display: flex;
+        font-size: 0.8rem;
+        align-items: center;
+        margin: 0px;
+    }
+
 }

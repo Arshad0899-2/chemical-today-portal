@@ -1,0 +1,94 @@
+.equip-insider-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.equip-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 40px;
+    height:600px
+}
+
+.equip-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.equiptext {
+    margin-bottom: 10px;
+}
+
+.equipimagee {
+    width: 550px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
+    margin-top: 10px;
+}
+
+.equiprectangular-box {
+    width: 320px;
+    height: 150px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+   
+}
+
+.equip {
+    margin-bottom: 40px;
+   
+        margin: auto;
+        width: 90%;
+   
+}
+
+.equipviewMoreImg:hover {
+    cursor: pointer;
+}
+
+.equipviewMoreImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    transform: scale(0.7);
+}
+
+.equip-heading {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equip-heading-text {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 45px;
+    width: max-content;
+    margin-bottom: 0px;
+}
+.equipApp {
+    margin-top: 40px;
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.equip-text {
+    background-color: rgb(189, 40, 40);
+    color: #FFF;
+    height: 35px;
+    display: flex;
+    width: fit-content;
+    margin: 0px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-left: 75px;
+    margin-top: 40px;
+}

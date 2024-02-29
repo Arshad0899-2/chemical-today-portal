@@ -24,25 +24,25 @@ const Details: React.FC<DetailsProps> = ({
 }) => {
     return (
         <>
-            <div className="post-type">
-                <p className='post-insider-type'>{postType}</p>
+            <div className="detail-type">
+                <p className='details-insider-type'>{postType}</p>
             </div>
-            <h1 className='post-insider-title'>{title}</h1>
-            <div className='post-info'>
+            <h1 className='detail-insider-title'>{title}</h1>
+            <div className='detail-info'>
                 <p>{publishedCompany}</p>
                 <p>{publishedDate}</p>
-                <div className='share'>
+                <div className='detail-share'>
                     <p>{share}</p>
-                    <div className='share-btn'></div>
-                    <div className='share-btn'></div>
-                    <div className='share-btn'></div>
+                    <div className='detail-share-btn'></div>
+                    <div className='detail-share-btn'></div>
+                    <div className='detail-share-btn'></div>
                 </div>
             </div>
-            <div className='img-info'>
-                <img className='post-img' src={postImg} />
+            <div className='detail-img-info'>
+                <img className='detail-img' src={postImg} />
                 <div>
-                    <p className='img-title'>{postImgTitle}</p>
-                    <p className='post-desc'>{postDesc}</p>
+                    <p className='detail-title'>{postImgTitle}</p>
+                    <p className='detail-desc'>{postDesc}</p>
                 </div>
             </div>
         </>

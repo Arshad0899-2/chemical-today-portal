@@ -1,74 +1,81 @@
 import './App.css'
-import Footer from './components/footer/Footer'
-import PostInsider from './pages/Post Insider/PostInsider'
+import PostInsider from './pages/PostInsider/PostInsider'
 import PostPage from './pages/Post/PostPage'
-import Header from './components/Header/Header'
 import CoverPage from './pages/CoverPage/CoverPage'
 import CoverPageHeader from './components/Cover-page-Header/CoverPageHeader'
-import CaseInsider from './pages/CaseInsider/CaseInsider'
-import CasePage from './pages/CasePage/CasePage'
-import DigitalInsider from './pages/DigitalInsider/DigitalInsider'
 import ProductInsider from './pages/ProductInsider/ProductInsider'
-import RandDInsider from './pages/RandDInsider/RandDInsider'
-import RandDPage from './pages/RandDPage/RandDPage'
-import ReportInsider from './pages/ReportInsider/ReportInsider'
-import ReportPage from './pages/ReportPage/ReportPage'
-import SectorInsider from './pages/SectorInsider/SectorInsider'
-import SectorPage from './pages/SectorPage/SectorPage'
-import Sustain1Page from './pages/Sustain1Page/Sustain1Page'
-import SustainInsider from './pages/SustainInsider/SustainInsider'
 import SustainPage from './pages/SustainPage/SustainPage'
-import WhiteInsider from './pages/WhiteInsider/WhiteInsider'
-import WhitePage from './pages/WhitePage/WhitePage'
+import Editorial from './pages/Editorial/Editorial'
 import Events from './pages/Events/Events'
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import { Editorial } from './pages/Editorial/Editorial'
+import SectorInsider from './pages/SectorInsider/SectorInsider'
+import Spotlight from './pages/Spotlight/Spotlight'
+import DigitPage from './pages/DigitPage/DigitPage'
+import Equipment from './pages/Equipment/Equipment'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import { createElement, useEffect, useState } from 'react'
+import { Header } from './components/Header/Header'
 
 function App() {
-
+  
   const [showHeader, setShowHeader] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const breakpoint = 1000;
+
+  useEffect(() => {
+      const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, []);
+
+  const location = useLocation();
+  const cond1 = location.pathname !== '/';
+  const cond2 = windowWidth <= breakpoint;
 
   const HeaderVisibilityController = () => {
-    const location = useLocation();
     useEffect(() => {
-      setShowHeader(location.pathname !== '/');
+      if(cond1 || cond2) {
+        setShowHeader(true)
+      } else {
+        setShowHeader(false);
+      }
     }, [location]);
-    return null; 
+    return null;
   }
+
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
 
   return (
     <>
-      <BrowserRouter>
-        <div>
-          <HeaderVisibilityController />
-          {true && <CoverPageHeader />}
-          {/* <Routes>
-              <Route path='/' Component={CoverPage} />
-              <Route path='/posts' Component={PostPage} />
-              <Route path='/spotlight' Component={SustainPage} />
-              <Route path='/events' Component={Events} />
-              <Route path='/post-insider' Component={PostInsider} />
-              <Route path='/sustainability' Component={SustainPage} />
-              <Route path='/digitalization' Component={CoverPage} />
-              <Route path='/product' Component={ProductInsider} />
-              <Route path='/editorial' Component={Editorial} />
-          </Routes> */}
-          {/* <Footer></Footer> */}
+        <HeaderVisibilityController />
+        { showHeader == true ? <Header toggleDrawer={toggleDrawer} /> : <CoverPageHeader /> }
+        <div className='main-body-container'>
+          <Routes >
+            <Route path='/' element={createElement(CoverPage)} />
+            <Route path='/posts' Component={PostPage} />
+            <Route path='/spotlight' Component={Spotlight} />
+            <Route path='/events' Component={Events} />
+            <Route path='/post-insider' Component={PostInsider} />
+            <Route path='/sustainability' Component={SustainPage} />*
+            <Route path='/digitalization' Component={DigitPage} />
+            <Route path='/product' Component={ProductInsider} />
+            <Route path='/editorial' Component={Editorial} />
+            <Route path='/sectors' Component={SectorInsider} />
+            <Route path='/equipment' Component={Equipment} />
+          </Routes>
         </div>
-
-      </BrowserRouter>
 
     </>
   )
 }
 
 export default App
-
-{/* <SectorPage></SectorPage>
-<PostPage></PostPage>
-<WhitePage></WhitePage>
-<ReportPage></ReportPage>
-<RandDPage></RandDPage>
-<SustainPage></SustainPage>
-<Sustain1Page></Sustain1Page>  */}

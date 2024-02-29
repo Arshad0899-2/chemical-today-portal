@@ -1,0 +1,105 @@
+.mainBannerEqp {
+    width: 100%;
+    max-width: 2200px;
+    object-fit: fill;
+}
+
+.mainBannerEqp-image {
+    width: 100%;
+    height: 400px;
+}
+
+.horizontal-ads-eqp {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.horizontal-ads-eqp img {
+    height: auto;
+    max-height: 120px;
+    margin-left: 20px; /* Adjust the left margin */
+    margin-right: 20px; /* Adjust the right margin */
+}
+
+.equipment-page{
+    margin-bottom: 40px;
+    margin: auto;
+    width: 80%;
+}
+
+.equipment-page-heading {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment-page-heading-text {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 45px;
+    width: max-content;
+    margin-bottom: 0px;
+}
+
+
+
+.equipmentAppPage {
+    margin-top: 40px;
+    margin-left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.equipmentimage-page-container {
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align images horizontally */
+    
+}
+
+
+
+.equipmentimagePage {
+    width: calc(25% - 50px); /* Adjust width of each image */
+    /* For example, with 4 images per row, each image takes 25% of the container width */
+    /* Subtracting gap width to avoid overflow */
+    max-width: calc(25% - 50px); /* Ensure images don't exceed 25% of container width */
+    margin: 8px; /* Adjust margin to create space between images */
+    background-color: #706cad; /* Change the background color of the rectangles */
+    /* Add more styling as needed */
+}  
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .equipmentimagePage {
+        width: calc(50% - 50px); /* Adjust width for two images per row */
+        max-width: calc(50% - 50px); /* Ensure images don't exceed 50% of container width */
+        
+    }
+}
+
+.equipmentPageviewMoreImg:hover {
+    cursor: pointer;
+}
+
+.equipmentPageviewMoreImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    transform: scale(0.7);
+}
+
