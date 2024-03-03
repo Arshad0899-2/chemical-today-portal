@@ -68,23 +68,24 @@ function App() {
         <div className='main-body-container'>
           <Routes >
             <Route path='/' element={createElement(CoverPage)} />
-            <Route path='/posts' Component={PostPage} />
-            <Route path='/spotlight' Component={Spotlight} />
-            <Route path='/events' Component={Events} />
-            <Route path='/post-insider' Component={PostInsider} />
-            <Route path='/sustainability' Component={SustainPage} />*
-            <Route path='/digitalization' Component={DigitPage} />
-            <Route path='/product' Component={ProductInsider} />
-            <Route path='/editorial' Component={Editorial} />
-            <Route path='/sectors' Component={SectorPage} />
-            <Route path='/equipment' Component={Equipment} />
-            <Route path='/report-insider' Component={ReportInsider} />
-            <Route path='/sector-insider' Component={SectorInsider} />
-            <Route path='/sustain-insider' Component={SustainInsider} />
-            <Route path='/digital-insider' Component={DigitalInsider} />
-            <Route path='/case-insider' Component={CaseInsider} />
-            <Route path='/whitePaper-insider' Component={WhiteInsider} />
-            <Route path='/RD-insider' Component={RandDInsider} />
+            <Route path='posts' Component={PostPage} />
+            <Route path='spotlight' Component={Spotlight} />
+            <Route path='events' Component={Events} />
+            <Route path='post-insider' Component={PostInsider} />
+            <Route path='sustainability' Component={SustainPage} />*
+            <Route path='digitalization' Component={DigitPage} />
+            <Route path='product' Component={ProductInsider} />
+            <Route path='ditorial' Component={Editorial} />
+            <Route path='sectors' Component={SectorPage} />
+            <Route path='equipment' Component={Equipment} />
+            <Route path='report-insider' Component={ReportInsider} />
+            <Route path='sector-insider' Component={SectorInsider} />
+            <Route path='sustain-insider' Component={SustainInsider} />
+            <Route path='digital-insider' Component={DigitalInsider} />
+            <Route path='case-insider' Component={CaseInsider} />
+            <Route path='whitePaper-insider' Component={WhiteInsider} />
+            <Route path='RD-insider' Component={RandDInsider} />
+            <Route path='equipment' Component={Equipment} />
           </Routes>
         </div>
 
