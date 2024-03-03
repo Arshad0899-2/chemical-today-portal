@@ -32,7 +32,7 @@ const Details: React.FC<DetailsProps> = ({
                 <p>{publishedCompany}</p>
                 <p>{publishedDate}</p>
                 <div className='detail-share'>
-                    <p>{share}</p>
+                    <p>share</p>
                     <div className='detail-share-btn'></div>
                     <div className='detail-share-btn'></div>
                     <div className='detail-share-btn'></div>

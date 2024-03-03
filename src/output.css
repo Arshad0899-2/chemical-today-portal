@@ -1998,36 +1998,12 @@ input.tab:checked + .tab-content,
   width: 1.5rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .flex-none {
   flex: none;
 }
 
 .grow {
   flex-grow: 1;
-}
-
-.-translate-x-\[20\%\] {
-  --tw-translate-x: -20%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[30\%\] {
-  --tw-translate-x: -30%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[10\%\] {
-  --tw-translate-x: -10%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[8\%\] {
-  --tw-translate-x: -8%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-x-\[9\%\] {
@@ -2053,6 +2029,10 @@ input.tab:checked + .tab-content,
 
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
+}
+
+.rounded-none {
+  border-radius: 0px;
 }
 
 .border {

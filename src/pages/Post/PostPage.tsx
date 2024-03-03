@@ -5,10 +5,13 @@ import Post from '../../components/ui/Post/Post';
 import sideBarAds from '../../assets/home-page-assets/Post-assets/balnk_ads.svg'
 import posts from '../../utils/posts';
 import { PostPageConstants } from "../../utils/constants";
+import useScrollToTop from '../../services/useScrollToTop';
 
 const PostPage: React.FC = () => {
 
     const postDetails = posts;
+
+    useScrollToTop();
 
     return (
         <>
@@ -21,7 +24,7 @@ const PostPage: React.FC = () => {
                     <div className="post-cards">
 
                             <Post
-                                redirectTo="/target-path/"
+                                redirectTo="/post-insider/"
                                 widthInPx="auto"
                                 posts={postDetails}
                                 isActive={true}

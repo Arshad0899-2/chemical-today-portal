@@ -19,7 +19,7 @@ function App() {
   
   const [showHeader, setShowHeader] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const breakpoint = 1000;
+  const breakpoint = 1079;
 
   useEffect(() => {
       const handleResize = () => {

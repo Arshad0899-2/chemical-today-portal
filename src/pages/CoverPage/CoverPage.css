@@ -271,11 +271,15 @@
 .event-card {
     display: flex;
     flex-grow: 1;
-    width: 350px
+    width: 350px;
 }
 
 .event-ads-2 {
     display: none;
+}
+
+.card.image-full:before {
+    border-radius: 0px;
 }
 
 @media screen and (max-width: 1072px) {

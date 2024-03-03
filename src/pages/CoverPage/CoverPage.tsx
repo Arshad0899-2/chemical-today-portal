@@ -6,6 +6,7 @@ import viewMore from '../../assets/home-page-assets/view-more.svg';
 import blankImg from "../../assets/home-page-assets/Post-assets/blank_img.svg";
 import editorsChoice from "../../assets/home-page-assets/editors-choice.png";
 import sample from "../../assets/home-page-assets/Post-assets/sample_img.png";
+import useScrollToTop from '../../services/useScrollToTop';
 
 
 const CoverPage: React.FC = () => {
@@ -25,6 +26,9 @@ const CoverPage: React.FC = () => {
         marginRight: '15px',
         marginBottom: '10px',
     }
+    
+    useScrollToTop();
+
 
     return (
         <>
