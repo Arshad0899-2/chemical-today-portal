@@ -2,6 +2,7 @@ import './ProductInsider.css';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import blackImg from "../../assets/home-page-assets/Post-assets/blank_img.svg"
 import Insider from '../../components/Insider/Insider';
+import insider from '../../utils/insider';
 
 const postType = "Industries";
 const postTitle = "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain";
@@ -18,7 +19,8 @@ const latest1 = "orem Ipsum is simply dummy text of the printing and typesetting
 const latest2 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
 const latest3 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
 const latest4 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
-
+const moreInsiders: Array<any> = insider;
+const viewMoreHeading = "Product";
 
 const ProductInsider: React.FC = () => {
 
@@ -28,20 +30,22 @@ const ProductInsider: React.FC = () => {
                 <img className='horizantal-ads' src={TempAds} alt="Advertize" />
 
                 <Insider 
-                        postType = {postType}
-                        postTitle = {postTitle}
-                        postBy = {postBy}
-                        postDate = {postDate}
-                        sharePost = {sharePost}
-                        postImgUrl = {postImgUrl}
-                        postImgCap = {postImgCap}
-                        postDesc = {postDesc}
-                        latest1 = {latest1}
-                        latest2 = {latest2}
-                        latest3 = {latest3}
-                        latest4 = {latest4}
-                    />
-
+                    postType={postType}
+                    postTitle={postTitle}
+                    postBy={postBy}
+                    postDate={postDate}
+                    sharePost={sharePost}
+                    postImgUrl={postImgUrl}
+                    postImgCap={postImgCap}
+                    postDesc={postDesc}
+                    latest1={latest1}
+                    latest2={latest2}
+                    latest3={latest3}
+                    latest4={latest4}
+                    moreInsiders={moreInsiders}
+                    isViewMore={true} 
+                    viewMoreHeading={viewMoreHeading}
+                />
 
             </div>
         </>

@@ -1,25 +1,5 @@
-.post-insider-body {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 90%;
-}
-
 .post-insider-main {
     display: flex;
     flex-direction: column;
     margin: auto;
 }
-
-.post-details {
-    height: 100%;
-    width: 80%;
-    padding-right: 50px;
-    margin-right: 5px;
-}
-
-.sidebar-ads {
-    width: 30%;
-    height: 100%;
-}
-

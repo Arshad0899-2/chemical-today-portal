@@ -1,5 +1,7 @@
 import './Insider.css';
 import Details from '../../components/ui/Details/Details';
+import viewMore from '../../assets/home-page-assets/view-more.svg';
+import Post from '../ui/Post/Post';
 
 interface InsiderProps {
     postType: string;
@@ -14,21 +16,26 @@ interface InsiderProps {
     latest2: string;
     latest3: string;
     latest4: string;
-  }
+    moreInsiders: Array<any>;
+    isViewMore: Boolean;
+    viewMoreHeading: string;
+}
 
 const Insider: React.FC<InsiderProps> = ({
     postType,
     postTitle,
     postBy,
     postDate,
-    sharePost,
+    moreInsiders,
     postImgUrl,
     postImgCap,
     postDesc,
     latest1,
     latest2,
     latest3,
-    latest4
+    latest4,
+    isViewMore,
+    viewMoreHeading
 }) => {
 
 
@@ -41,7 +48,6 @@ const Insider: React.FC<InsiderProps> = ({
                         title={postTitle}
                         publishedCompany={postBy}
                         publishedDate={postDate}
-                        share={sharePost}
                         postImg={postImgUrl}
                         postImgTitle={postImgCap}
                         postDesc={postDesc}
@@ -52,9 +58,9 @@ const Insider: React.FC<InsiderProps> = ({
                 </div>
 
                 <div className='insider-sidebar-ads'>
-                        <div className='insider-latest-updates'>
-                            Latest Updates
-                        </div>
+                    <div className='insider-latest-updates'>
+                        Latest Updates
+                    </div>
                     <div className='insider-latest'>
                         <div className='insider-updates'>
                             <a href='#'>{latest1}</a>
@@ -81,6 +87,23 @@ const Insider: React.FC<InsiderProps> = ({
                 <div className='insider-xl-ads'>
                 </div>
             </div>
+
+            {isViewMore && <div className='insider-post'>
+                <div className='insider-post-heading'>
+                    <h3 className='insider-post-heading-text'>{viewMoreHeading}</h3>
+                    <a href='#' className='insider-viewMoreImg'>
+                        <img src={viewMore} />
+                    </a>
+                </div>
+                <div className='insider-post-items'>
+                    <Post
+                        redirectTo="/target-path/"
+                        widthInPx="420px"
+                        posts={moreInsiders}
+                        isActive={false}
+                    />
+                </div>
+            </div>}
         </>
     );
 };

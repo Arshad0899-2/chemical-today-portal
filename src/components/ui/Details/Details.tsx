@@ -5,7 +5,6 @@ interface DetailsProps {
     title: string;
     publishedCompany: string;
     publishedDate: string;
-    share: string;
     postImg: string;
     postImgTitle: string;
     postDesc: Array<string>;
@@ -16,7 +15,6 @@ const Details: React.FC<DetailsProps> = ({
     title,
     publishedCompany,
     publishedDate,
-    share,
     postImg,
     postImgTitle,
     postDesc
@@ -32,7 +30,7 @@ const Details: React.FC<DetailsProps> = ({
                 <p>{publishedCompany}</p>
                 <p>{publishedDate}</p>
                 <div className='detail-share'>
-                    <a href={share}>share</a>
+                    <p>Share</p>
                     <div className='detail-share-btn'></div>
                     <div className='detail-share-btn'></div>
                     <div className='detail-share-btn'></div>

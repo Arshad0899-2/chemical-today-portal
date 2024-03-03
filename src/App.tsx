@@ -14,6 +14,13 @@ import Equipment from './pages/Equipment/Equipment'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { createElement, useEffect, useState } from 'react'
 import { Header } from './components/Header/Header'
+import ReportInsider from './pages/ReportInsider/ReportInsider'
+import SustainInsider from './pages/SustainInsider/SustainInsider'
+import DigitalInsider from './pages/DigitalInsider/DigitalInsider'
+import CaseInsider from './pages/CaseInsider/CaseInsider'
+import WhiteInsider from './pages/WhiteInsider/WhiteInsider'
+import RandDInsider from './pages/RandDInsider/RandDInsider'
+import SectorPage from './pages/SectorPage/SectorPage'
 
 function App() {
   
@@ -69,8 +76,15 @@ function App() {
             <Route path='/digitalization' Component={DigitPage} />
             <Route path='/product' Component={ProductInsider} />
             <Route path='/editorial' Component={Editorial} />
-            <Route path='/sectors' Component={SectorInsider} />
+            <Route path='/sectors' Component={SectorPage} />
             <Route path='/equipment' Component={Equipment} />
+            <Route path='/report-insider' Component={ReportInsider} />
+            <Route path='/sector-insider' Component={SectorInsider} />
+            <Route path='/sustain-insider' Component={SustainInsider} />
+            <Route path='/digital-insider' Component={DigitalInsider} />
+            <Route path='/case-insider' Component={CaseInsider} />
+            <Route path='/whitePaper-insider' Component={WhiteInsider} />
+            <Route path='/RD-insider' Component={RandDInsider} />
           </Routes>
         </div>
 
