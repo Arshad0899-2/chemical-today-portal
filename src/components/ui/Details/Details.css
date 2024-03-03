@@ -46,6 +46,14 @@
     padding-right: 25px;
 }
 
+.detail-share > a {
+    color: black;
+}
+
+.detail-share > a:hover {
+    color: black;
+}
+
 .detail-desc {
     font-weight: 500;
     font-size: 16px;
@@ -69,21 +77,78 @@
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1650px) {
+
+    .detail-insider-title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .detail-info {
+        font-size: 26px;
+        padding: 20px 15px;
+    }
+
+    .detail-title {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .detail-desc {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
     
     .detail-insider-title {
-        font-size: 26px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .detail-title {
+        font-size: 28px;
         line-height: 40px;
     }
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-width: 950px) {
     
     .detail-insider-title {
         font-size: 20px;
         line-height: 32px;
     }
 
+    .detail-title {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .detail-info {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .detail-insider-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .detail-title {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .detail-info {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
 }
 

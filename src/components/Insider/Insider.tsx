@@ -48,11 +48,14 @@ const Insider: React.FC<InsiderProps> = ({
                     />
                 </div>
 
+                <div className='insider-xl-ads'>
+                </div>
+
                 <div className='insider-sidebar-ads'>
-                    <div>
                         <div className='insider-latest-updates'>
                             Latest Updates
                         </div>
+                    <div className='insider-latest'>
                         <div className='insider-updates'>
                             <a href='#'>{latest1}</a>
                         </div>
@@ -74,6 +77,8 @@ const Insider: React.FC<InsiderProps> = ({
                         <div className='indiser-ad-div'>
                         </div>
                     </div>
+                </div>
+                <div className='insider-xl-ads'>
                 </div>
             </div>
         </>
