@@ -9,7 +9,7 @@ interface InsiderProps {
     sharePost: string;
     postImgUrl: string;
     postImgCap: string;
-    postDesc: string;
+    postDesc: Array<string>;
     latest1: string;
     latest2: string;
     latest3: string;

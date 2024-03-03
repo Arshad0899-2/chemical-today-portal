@@ -8,7 +8,7 @@ interface DetailsProps {
     share: string;
     postImg: string;
     postImgTitle: string;
-    postDesc: string;
+    postDesc: Array<string>;
 }
 
 const Details: React.FC<DetailsProps> = ({
@@ -42,7 +42,7 @@ const Details: React.FC<DetailsProps> = ({
                 <img className='detail-img' src={postImg} />
                 <div>
                     <p className='detail-title'>{postImgTitle}</p>
-                    <p className='detail-desc'>{postDesc}</p>
+                    <p className='detail-desc'>{postDesc[0]} <br /><br /> {postDesc[1]} <br /><br /> {postDesc[2]} </p>
                 </div>
             </div>
         </>

@@ -1,64 +1,49 @@
 import './ProductInsider.css';
 import TempAds from "../../assets/home-page-assets/temp-adv.png";
 import blackImg from "../../assets/home-page-assets/Post-assets/blank_img.svg"
-import { PostInsiderConstants } from "../../utils/constants";
-import Details from '../../components/ui/Details/Details';
-import insider from '../../utils/insider';
-import PostCard3 from '../../components/ui/WhitePapers/PostCard3';
+import Insider from '../../components/Insider/Insider';
+
+const postType = "Industries";
+const postTitle = "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain";
+const postBy = "By Chemical Today";
+const postDate = "01 March 2024";
+const sharePost = "#";
+const postImgUrl = blackImg;
+const postImgCap = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+const postDesc1 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
+const postDesc2 = "Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. ";
+const postDesc3 = "Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry."
+const postDesc: string[] = [postDesc1, postDesc2, postDesc3];
+const latest1 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
+const latest2 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
+const latest3 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
+const latest4 = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever sinceorem Ipsum is simply dummy text of the printing and typesetting industry.";
+
 
 const ProductInsider: React.FC = () => {
-    const postDetails = insider;
-    const PostInsiderConstant = PostInsiderConstants[0];
+
     return (
         <>
             <div className='post-insider-main'>
                 <img className='horizantal-ads' src={TempAds} alt="Advertize" />
-                <div className='post-insider-body'>
-                    <div className='post-details'>
-                        <Details
-                            postType={PostInsiderConstant.postType}
-                            title={PostInsiderConstant.title}
-                            publishedCompany={PostInsiderConstant.publishedCompany}
-                            publishedDate={PostInsiderConstant.publishedDate}
-                            share={PostInsiderConstant.share}
-                            postImg={blackImg}
-                            postImgTitle={PostInsiderConstant.PostImgTitle}
-                            postDesc={PostInsiderConstant.postDesc}
-                        />
-                    </div>
 
-                    <div className='sidebar-ads'>
+                <Insider 
+                        postType = {postType}
+                        postTitle = {postTitle}
+                        postBy = {postBy}
+                        postDate = {postDate}
+                        sharePost = {sharePost}
+                        postImgUrl = {postImgUrl}
+                        postImgCap = {postImgCap}
+                        postDesc = {postDesc}
+                        latest1 = {latest1}
+                        latest2 = {latest2}
+                        latest3 = {latest3}
+                        latest4 = {latest4}
+                    />
 
-                    </div>
-                </div>
+
             </div>
-
-            <div className="additional-content">
-                <div className="content-container">
-                    <div className="rectangle-box">
-                        <p className="post-text">Productss</p>
-                    </div>
-                    <a href="your-url" className="learn-more">Learn more &gt;&gt;</a>
-                </div>
-                <div className="divider"></div>
-            </div>
-
-            <div className="App">
-
-                        {postDetails.map((postCard3, index) => (
-                            <PostCard3
-                                imageSrc={postCard3.url}
-                                altText={postCard3.heading}
-                                overlayText={postCard3.description}
-                                redirectTo="/target-path/"
-                                widthInPx="435px"
-                                postIndex={index}
-                            />
-
-                        ))
-
-                        }
-                    </div>
         </>
     );
 };

@@ -100,7 +100,7 @@ const CoverPageHeader: React.FC = () => {
                     </div>
                     <Link to={'#'} className='item'>Insights</Link>
                     <Link to={'spotlight'} className='item'>Spotlight</Link>
-                    <Link to={'#'} className='item'>Product</Link>
+                    <Link to={'product'} className='item'>Product</Link>
                     <Link to={'events'} className='item'>Events</Link>
                     <Link to={'equipment'} className='item'>Equipment</Link>
                     <Link to={'sustainability'} className='item'>Sustainability</Link>
