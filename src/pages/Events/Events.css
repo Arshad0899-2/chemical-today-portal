@@ -10,28 +10,46 @@
 }
 
 .events-header-body:first-child {
-    border: 2px solid gray;
+}
+
+.events-header-cont-1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 
 .join-now-btn {
     background-color: #821BC3;
-    border: 1.6px solid rgb(221, 216, 216);
     color: white;
     border-radius: 6px;
-    padding: 5px 15px;
-    margin-bottom: 20px;
+    padding: 0px 25px;
+    border: 1px solid white;
+}
+
+.event-box-number {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.event-boxs {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .events-header-info {
     font-size: 30px;
+    font-weight: 500;
     font-style: 'Roboto';
-    margin: 5px 0px 25px;
+    margin: 5px 0px 8px;
 }
 
 .event-box {
     width: 100%;
-    border: 1px solid red;
 }
 
 .event-time {
@@ -42,8 +60,49 @@
 
 
 .events-header-body {
-    width: 90%;
+    width: 85%;
     color: white;
     display: flex;
     margin: auto;
+}
+
+.events-posts {
+    background-color: black;
+    width: 100%;
+}
+
+.events-posts-insider {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+
+.events-details {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.events-details > p {
+    color: white;
+}
+
+.events-detail-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #821BC3;
+}
+
+.events-details-heading {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.events-details-desc {
+    font-size: 0.85rem;
+    font-weight: 300;
 }

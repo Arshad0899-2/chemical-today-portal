@@ -21,6 +21,7 @@ import CaseInsider from './pages/CaseInsider/CaseInsider'
 import WhiteInsider from './pages/WhiteInsider/WhiteInsider'
 import RandDInsider from './pages/RandDInsider/RandDInsider'
 import SectorPage from './pages/SectorPage/SectorPage'
+import Equipmentinsider from './pages/EquipmentInsider/Equipmentinsider'
 
 function App() {
   
@@ -86,6 +87,7 @@ function App() {
             <Route path='whitePaper-insider' Component={WhiteInsider} />
             <Route path='RD-insider' Component={RandDInsider} />
             <Route path='equipment' Component={Equipment} />
+            {/* <Route path='equipment-insider' Component={Equipmentinsider} /> */}
           </Routes>
         </div>
 
